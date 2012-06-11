@@ -1,0 +1,159 @@
+
+body
+{ 
+	background-color: #000000;
+	color: #fff5b5;
+	font: 100% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+}
+
+a:link { color:#fff5b5; }		/* unvisited link */
+a:visited { color: #fce86c; }	/* visited link */
+a:hover { color:#fff5b5; }		/* mouse over link */
+a:active { color:#fff5b5; }		/* selected link */ 
+
+textarea#splash
+{ 
+    width:500px;
+	height:200px;
+	/*border:none;*/
+	background-image: url(images/leopard2.jpg);
+	background-color: #4c4b48;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align:center;
+	color: #fff5b5;
+	font-weight: bold;
+	font: 100% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif; 
+}
+
+textarea#desc, textarea#review
+{ 
+    width:500px;
+	height:150px;
+}
+
+#header
+{
+	width:902px;
+	height:200px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+a img { border:0 }
+
+
+
+#nav
+{
+	float:left;
+	width:100%;
+	/*background: #333;*/
+	overflow:hidden;
+	position:relative;
+}
+#nav ul
+{
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+#nav ul li
+{
+	display:block;
+	float: left;
+	list-style:none;
+	margin: 0;
+	padding: 0;
+	position:relative;
+	right:50%;
+	font: 100% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+}
+#nav ul li a
+{
+	background: #000000 url("images/seperator.gif") bottom right no-repeat;
+	color: #fff5b5; /*ccc before*/
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+	font-weight:normal;
+	text-align:center;
+}
+#nav ul li a:hover, #nav ul li a#currentpage
+{
+	background: #ffe14f url("images/hover.gif") bottom center no-repeat;
+	color: #000000;
+	padding-bottom: 8px;
+}
+#nav ul li a.active, #nav ul li a.active:hover
+{
+	background: #ffcc00 url("images/hover.gif") bottom center no-repeat;
+	color: #fff;
+	padding-bottom: 8px;
+}
+
+
+
+#content-container
+{
+	/*background-color: #4c4b48; --old background color*/
+	background-color: #000000;
+	width:902px; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+
+#content-block1		/*content blocks that sit side by side on homepage*/
+{
+	float: left;
+	background: #000FFF;
+	width:345px;
+	padding: 3px;
+	margin: 10px;
+	display: inline;
+}
+
+#footer
+{ 
+	width:902px; 
+	margin-left: auto; 
+	margin-right: auto;
+	border-top-style: solid;
+	border-top-width: 1px;
+	clear: both;
+}
+
+
+.collapsibleList li
+{
+  cursor:pointer;
+}
+
+#reviewpost
+{
+	border-top-style:solid;
+	border-top-width:10px;
+}
+
+#recentreviewpost
+{
+	border-style:solid;
+	border-width:1px;
+	font-size:12px;
+}
+
+#myreviewpost
+{
+	border-top-style:solid;
+	border-top-width:3px;
+	font-size: 75%
+}
+

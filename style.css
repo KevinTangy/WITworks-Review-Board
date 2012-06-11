@@ -1,0 +1,238 @@
+
+html
+{
+	height: 100%;
+}
+
+body
+{ 
+	background-image: url(images/dark_wood.png);
+	background-repeat: repeat;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	/*background-color: #000000;--black background OR background-color: #4c4b48;---gray background color*/
+	color:#fff5b5; /*color: #fff5b5;--yellow font color*/
+	font: 100% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+}
+
+a:link { color:#fff5b5; }		/* unvisited link */
+a:visited { color: #fce86c; }	/* visited link */
+a:hover { color:#fff5b5; }		/* mouse over link */
+a:active { color:#fff5b5; }		/* selected link */ 
+
+textarea#splash
+{ 
+    width:500px;
+	height:200px;
+	/*border:none;*/
+	background-image: url(images/leopard2.jpg);
+	background-color: #4c4b48;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align:center;
+	color: #fff5b5;
+	font-weight: bold;
+	font: 100% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif; 
+}
+
+textarea#desc, textarea#review
+{ 
+    width:500px;
+	height:150px;
+}
+
+#header
+{
+	width:100%;/*old size=902px;*/
+	height:200px;
+	margin:0;
+	padding:0;
+	background-image:url('images/banner.png');
+	background-repeat:repeat-x;
+	/*margin-left: auto; 
+	margin-right: auto;*/
+}
+
+a img { border:0 }
+
+#nav
+{
+	float:left;
+	width:100%;
+	overflow:hidden;
+	position:relative;
+}
+#nav ul
+{
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+#nav ul li
+{
+	display:block;
+	float: left;
+	list-style:none;
+	margin: 0;
+	padding: 0;
+	position:relative;
+	right:50%;
+	font: 100% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+}
+#nav ul li a
+{
+	background: #000000 url("images/seperator.gif") bottom right no-repeat;
+	color: #fff5b5; /*ccc before*/
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+	font-weight:normal;
+	text-align:center;
+}
+#nav ul li a:hover, #nav ul li a#currentpage
+{
+	background: #ffe14f url("images/hover.gif") bottom center no-repeat;
+	color: #000000;
+	padding-bottom: 8px;
+}
+#nav ul li a.active, #nav ul li a.active:hover
+{
+	background: #ffcc00 url("images/hover.gif") bottom center no-repeat;
+	color: #fff;
+	padding-bottom: 8px;
+}
+
+
+#page
+{
+	width: 902px;
+	margin: 0 auto;
+	/*min-height: 100%;*/
+}
+
+
+#content-container
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 9em;
+	/*background-color: #4c4b48;*/
+	/*background-color: #000000; -- black background color */
+	/*width:902px;*/
+	/*height:auto;
+	margin-left: auto; 
+	margin-right: auto;*/
+}
+
+.clearer
+{
+	clear: both;
+	display: block;
+	height: 1px;
+	margin-bottom: -1px;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+
+#content-block1		/*content blocks that sit side by side on homepage*/
+{
+	float: left;
+	background: #000FFF;
+	width:345px;
+	padding: 3px;
+	margin: 10px;
+	display: inline;
+}
+
+#nonFooter
+{
+	position: relative;
+	min-height: 100%;
+	background-color: #4c4b48;
+	-moz-border-top-left-radius: 15px;
+	-moz-border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+* html #nonFooter
+{
+	height: 100%;
+}
+
+#footer
+{
+	width: 902px;
+	background: #4c4b48;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	margin-top: -7.5em auto 0 auto;
+	border-top-style: solid;
+	border-top-width: 1px;
+	-moz-border-bottom-left-radius: 15px;
+	-moz-border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	/*margin-left: auto; 
+	clear: both;
+	margin-right: auto;*/
+}
+
+
+.collapsibleList li
+{
+  cursor:pointer;
+}
+
+#reportsbox
+{
+	border:solid;
+	border-radius: 15px;
+}
+	
+#reports
+{
+	padding: 3px;
+}
+
+#reviewpost
+{
+	/*border-top-style:solid;
+	border-top-width:10px;*/
+	border-left: solid; /*trying to add lines on left*/
+	border-bottom: solid;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+#recentreviewpost
+{
+	border-style:solid;
+	border-width:1px;
+	border-radius: 15px;
+	font-size:12px;
+	padding: 5px;
+}
+
+#myreviewpost
+{
+	border-top-style:solid;
+	border-top-width:2px;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	border-radius: 15px;
+	padding: 5px;
+	font-size: 75%
+}
+

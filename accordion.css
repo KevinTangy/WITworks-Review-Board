@@ -1,0 +1,57 @@
+#accordionwrapper {
+	width: 900px;
+	/*min-height: 100%;*/
+	}
+
+.accordionButton {	
+	width: 875px; /*old 655*/
+	float: left;
+	_float: none;  /* Float works in all browsers but IE6 */
+	/*border-top: 1px dotted #0e0e0e;*/
+	cursor: pointer;
+	padding: 4px;
+	/*background-image: url(../images/accordianbutton.jpg);
+	background-repeat: repeat-x;*/
+	background-color:#4c4b48;
+	color: #fff5b5;
+	font-size: 100%;
+	margin-bottom: 1px;
+	}
+	
+.accordionContent {	
+	width: 875px;
+	float: left;
+	_float: none;  /* Float works in all browsers but IE6 */
+	display: none;
+	padding-left: 3px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	}
+
+.accordionContent h4 a {
+	color: #0e0e0e;
+}
+
+#content h4 {
+	font-size: 100%;	
+}
+
+#content p {
+	padding-right: 5px;
+	font-size:30%;
+	}
+
+.on {
+	background-image: none;
+	background: #fff5b5;
+	color: #0e0e0e;
+	border-top: none;
+	padding-top: 10px;
+	font-size: 100%; 
+	font-weight: bold;
+	}
+	
+.over {
+	background: #fff5b5;
+	color: #0e0e0e;
+	}
