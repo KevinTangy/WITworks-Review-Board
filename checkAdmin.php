@@ -9,7 +9,6 @@
 		case "duncani":
 		case "denong":
 		case "sureshd":
-		
 			return true;
 		default:
 			return false;
