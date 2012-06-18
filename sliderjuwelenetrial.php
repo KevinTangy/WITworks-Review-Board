@@ -5,7 +5,7 @@
 <?php include( "config.php" ); ?>
 	<meta charset="utf-8">
 
-	<title>AnythingSlider Simple Demo</title>  this is a test
+	<title>AnythingSlider Simple Demo</title>  this is a test this is a test too
 	
 	<!-- jQuery (required) -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
