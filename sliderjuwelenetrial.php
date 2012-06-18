@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-asdf
+
 <head>
 <?php include( "config.php" ); ?>
 	<meta charset="utf-8">
