@@ -23,13 +23,22 @@
 			
 					<ul class="nav pull-right">
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Kevin Tang <b class="caret"></b></a>
+							<?php
+								include( "config.php" );
+								$queryFName = "SELECT firstname FROM Student JOIN Login WHERE Login.StudentID = Student.StudentID AND username = '" . $_SESSION[ "username" ] . "'";
+								$result = mysql_query( $queryFName ) or die(mysql_error());
+								$fname = mysql_fetch_array( $result );
+								echo '<a href="#" class="dropdown-toggle" data-toggle="dropdown">$fname <b class="caret"></b></a>';
+							?>
 							<ul class="dropdown-menu">
 								<li><a href="#">My Profile</a></li>
-						
-								<li class="divider">Another action</a></li>
-								<li><a href="#">Admin Dashboard</a></li>
-						
+								<?php
+									if ( include( "checkAdmin.php" ) )
+									{
+										echo '<li class="divider"></li>\n';
+										echo '<li><a href="admin.php">Admin Dashboard</a></li>';
+									}
+								?>
 								<li class="divider"></li>
 								<li><a href="logout.php">Logout</a></li>
 							</ul>
