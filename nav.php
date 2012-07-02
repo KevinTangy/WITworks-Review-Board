@@ -25,17 +25,17 @@
 						<li class="dropdown">
 							<?php
 								include( "config.php" );
-								$queryFName = "SELECT firstname FROM Student JOIN Login WHERE Login.StudentID = Student.StudentID AND username = '" . $_SESSION[ "username" ] . "'";
-								$result = mysql_query( $queryFName ) or die(mysql_error());
-								$fname = mysql_fetch_array( $result );
-								echo '<a href="#" class="dropdown-toggle" data-toggle="dropdown">$fname <b class="caret"></b></a>';
+								$queryFName = "SELECT firstname, lastname FROM Student JOIN Login WHERE Login.StudentID = Student.StudentID AND username = '" . $_SESSION[ "username" ] . "'";
+								$result = mysql_query( $queryFName ) or die( mysql_error() );
+								$name = mysql_fetch_array( $result );
+								echo '<a href="#" class="dropdown-toggle" data-toggle="dropdown">' . $name[ 0 ] . " " . $name[ 1 ] . ' <b class="caret"></b></a>';
 							?>
 							<ul class="dropdown-menu">
 								<li><a href="#">My Profile</a></li>
 								<?php
 									if ( include( "checkAdmin.php" ) )
 									{
-										echo '<li class="divider"></li>\n';
+										echo '<li class="divider"></li>';
 										echo '<li><a href="admin.php">Admin Dashboard</a></li>';
 									}
 								?>

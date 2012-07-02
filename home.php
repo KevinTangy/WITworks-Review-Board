@@ -1,3 +1,18 @@
+<?php
+	// initialize session
+	session_start();
+	
+	// if user is not logged in and has accepted disclaimer, redirect to login page, else if disclaimer has not been accepted, redirect to splash
+	if ( !isset( $_SESSION[ "username" ] ) && isset( $_SESSION[ "disclaimer" ] ) )
+	{
+		header( "Location: login.php" );
+	}
+	else if ( !isset( $_SESSION[ "disclaimer" ] ) )
+	{
+		header( "Location: splash.php" );
+	}
+?>
+
 	<?php include( "header.php" ); ?>
 	
 	
@@ -9,7 +24,7 @@
 	
 		<!-- page header, welcome message -->
 		<div class="page-header">
-			<h1>Welcome, Kevin!</h1>
+			<h1>Welcome, <?php echo $name[ 0 ]; ?>!</h1>
 		</div>
 	
 		<!-- Main carousel (slider) unit -->

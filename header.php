@@ -33,7 +33,7 @@
 		
 		<?php
 			$title = "WITworks Review Board";
-			switch( $_SERVER[ "SCRIPT_NAME" ] )
+			switch ( $_SERVER[ "SCRIPT_NAME" ] )
 			{
 				case "/splash.php":
 					$title .= " - Disclaimer";
