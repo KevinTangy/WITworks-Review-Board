@@ -36,8 +36,16 @@
 				height: 60px;
 				text-align: center;
 			}
-			@media ( max-width: 979px )
-			{
+			@media ( max-width: 767px )
+			{	
+				.wrapper { min-height: 50%; }
+				.wrapper > .container { padding-top: 0; }
+				footer { margin-left: -20px; margin-right: -20px; }
+				footer .container { padding-left: 20px; padding-right: 20px; }
+			}
+			@media ( min-width: 768px ) and ( max-width: 979px )
+			{	
+				.wrapper { min-height: 50%; }
 				.wrapper > .container { padding-top: 0; }
 				footer { margin-left: -20px; margin-right: -20px; }
 				footer .container { padding-left: 20px; padding-right: 20px; }
