@@ -1,4 +1,3 @@
-
 <?php
 	// initialize session
 	session_start();
@@ -13,9 +12,9 @@
 		header( "Location: splash.php" );
 	}
 	
-	// validate the login and return error or redirect to homepage
-	include( 'checkCredentials.php' );
-
+	// validate email and send generated password or return error
+	include( 'reset.php' );
+	
 	include( "header.php" );
 ?>
 	
@@ -38,25 +37,23 @@
 	<div class="wrapper">
 		<div class="container">
 			<center>
-				<br>
-				<h3>User Login</h3>
-				<br>
-    
-				<?php // invalid login error message
-					echo $error;
-				?>
-    
+			<br>
+			<h3>forgot password?  (NOT WORKING)</h3>
+			<?php // directions or success/error message
+				if ( $message != NULL )
+					echo "<h4>" . $message . "<h4>";
+				else
+					echo "<h4>Enter your email to get a randomly generated password.<h4>";
+			?>
+			<br>
+			<form name="resetPass" id="resetPass" method="POST">
 				<table border="0">
-					<form method="POST" action="">
-						<tr><td>Username:</td><td><input type="text" name="username" size="20"></td></tr>
-						<tr><td>Password:</td><td><input type="password" name="password" size="20"></td></tr>
-						<tr><td>&nbsp;</td><td><input type="submit" name="submit" value="Login"></td></tr>
-						<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
-						<tr><td>&nbsp;</td><td><a href="iforgot.php">forgot password?</a></td></tr>
-					</form>
+					<tr><td>Email:</td><td><input class="validate[required,custom[email]]" type="text" name="email" id="email" size="20"></td></tr>
+					<tr><td>&nbsp;</td><td><input type="submit" value="Submit" disabled></td></tr>
 				</table>
-				<br>
-			</center>
+			</form>
+			<br>
+			<center>
 		</div> <!-- /container -->
 		<div class="push"></div>
 	</div> <!-- /wrapper -->

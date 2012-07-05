@@ -19,11 +19,12 @@
 				min-height: 100%;
 				height: auto !important;
 				height: 100%;
-				margin: 0 auto -60px;
+				margin: 0 auto -70px;
 			}
 			.wrapper > .container
 			{
 				padding-top: 60px;
+				padding-bottom: 60px;
 			}
 			.push
 			{
@@ -35,17 +36,10 @@
 				background: #222;
 				height: 60px;
 				text-align: center;
+				padding-top: 10px;
 			}
-			@media ( max-width: 767px )
+			@media ( max-width: 979px )
 			{	
-				.wrapper { min-height: 50%; }
-				.wrapper > .container { padding-top: 0; }
-				footer { margin-left: -20px; margin-right: -20px; }
-				footer .container { padding-left: 20px; padding-right: 20px; }
-			}
-			@media ( min-width: 768px ) and ( max-width: 979px )
-			{	
-				.wrapper { min-height: 50%; }
 				.wrapper > .container { padding-top: 0; }
 				footer { margin-left: -20px; margin-right: -20px; }
 				footer .container { padding-left: 20px; padding-right: 20px; }
