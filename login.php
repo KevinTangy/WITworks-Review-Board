@@ -35,49 +35,50 @@
 		</div>
 	</div>
 
-	<div class="container">
-	
-		<center>
-			<br>
-			<h3>User Login</h3>
-			<br>
+	<div class="wrapper">
+		<div class="container">
+			<center>
+				<br>
+				<h3>User Login</h3>
+				<br>
     
-			<?php // invalid login error message
-				echo $error;
-			?>
+				<?php // invalid login error message
+					echo $error;
+				?>
     
-			<table border="0">
-				<form method="POST" action="">
-					<tr><td>Username:</td><td><input type="text" name="username" size="20"></td></tr>
-					<tr><td>Password:</td><td><input type="password" name="password" size="20"></td></tr>
-					<tr><td>&nbsp;</td><td><input type="submit" name="submit" value="Login"></td></tr>
-					<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
-					<tr><td>&nbsp;</td><td><a href="iForgot.php">forgot password?</a></td></tr>
-				</form>
-			</table>
-			<br>
-		</center>
-
-		<?php include( "footer.php" ); ?>
-
+				<table border="0">
+					<form method="POST" action="">
+						<tr><td>Username:</td><td><input type="text" name="username" size="20"></td></tr>
+						<tr><td>Password:</td><td><input type="password" name="password" size="20"></td></tr>
+						<tr><td>&nbsp;</td><td><input type="submit" name="submit" value="Login"></td></tr>
+						<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+						<tr><td>&nbsp;</td><td><a href="iForgot.php">forgot password?</a></td></tr>
+					</form>
+				</table>
+				<br>
+			</center>
 		</div> <!-- /container -->
+		<div class="push"></div>
+	</div> <!-- /wrapper -->
+	
+	<?php include( "footer.php" ); ?>
 
-		<!-- Le javascript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap-transition.js"></script>
-		<script src="js/bootstrap-alert.js"></script>
-		<script src="js/bootstrap-modal.js"></script>
-		<script src="js/bootstrap-dropdown.js"></script>
-		<script src="js/bootstrap-scrollspy.js"></script>
-		<script src="js/bootstrap-tab.js"></script>
-		<script src="js/bootstrap-tooltip.js"></script>
-		<script src="js/bootstrap-popover.js"></script>
-		<script src="js/bootstrap-button.js"></script>
-		<script src="js/bootstrap-collapse.js"></script>
-		<script src="js/bootstrap-carousel.js"></script>
-		<script src="js/bootstrap-typeahead.js"></script>
+	<!-- Le javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap-transition.js"></script>
+	<script src="js/bootstrap-alert.js"></script>
+	<script src="js/bootstrap-modal.js"></script>
+	<script src="js/bootstrap-dropdown.js"></script>
+	<script src="js/bootstrap-scrollspy.js"></script>
+	<script src="js/bootstrap-tab.js"></script>
+	<script src="js/bootstrap-tooltip.js"></script>
+	<script src="js/bootstrap-popover.js"></script>
+	<script src="js/bootstrap-button.js"></script>
+	<script src="js/bootstrap-collapse.js"></script>
+	<script src="js/bootstrap-carousel.js"></script>
+	<script src="js/bootstrap-typeahead.js"></script>
 
 	</body>
 

@@ -10,14 +10,41 @@
 		<!-- Le styles -->
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<style type="text/css">
-			body
+			html, body
+			{
+				height: 100%;
+			}
+			.wrapper
+			{
+				min-height: 100%;
+				height: auto !important;
+				height: 100%;
+				margin: 0 auto -60px;
+			}
+			.wrapper > .container
 			{
 				padding-top: 60px;
-				padding-bottom: 40px;
+			}
+			.push
+			{
+				height: 60px;
+			}
+			footer
+			{
+				color: #666;
+				background: #222;
+				height: 60px;
+				text-align: center;
+			}
+			@media ( max-width: 979px )
+			{
+				.wrapper > .container { padding-top: 0; }
+				footer { margin-left: -20px; margin-right: -20px; }
+				footer .container { padding-left: 20px; padding-right: 20px; }
 			}
 		</style>
 		<link href="css/bootstrap-responsive.css" rel="stylesheet">
-		<link href="css/custom.css" rel="stylesheet">
+		<!-- <link href="css/custom.css" rel="stylesheet"> -->
 	
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>

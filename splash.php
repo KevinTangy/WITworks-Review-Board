@@ -16,22 +16,23 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="wrapper">
+		<div class="container">
+			<center>
+				<textarea id="splash" readonly>All reviews posted are based on personal experiences. They do not reflect the views of the respective company or of Wentworth Institute of Technology.  All posts are monitored and will be removed if found to be unprofessional.</textarea>
+				<br><br>
+				<form id="form1" action="submitDisclaimer.php" method="post">
+					<input type="radio" name="disclaimer" value="agree"> I Agree<br>
+					<input type="radio" name="disclaimer" value="disagree" CHECKED> I Do NOT Agree<br><br>
+					<input type="submit" name="submit" value="Submit">
+				</form>
+			</center>
+		</div> <!-- /container -->
+		<div class="push"></div>
+	</div> <!-- /wrapper -->
 	
-		<center>
-			<textarea id="splash" readonly>All reviews posted are based on personal experiences. They do not reflect the views of the respective company or of Wentworth Institute of Technology.  All posts are monitored and will be removed if found to be unprofessional.</textarea>
-			<br><br>
-			<form id="form1" action="submitDisclaimer.php" method="post">
-				<input type="radio" name="disclaimer" value="agree"> I Agree<br>
-				<input type="radio" name="disclaimer" value="disagree" CHECKED> I Do NOT Agree<br><br>
-				<input type="submit" name="submit" value="Submit">
-			</form>
-		</center>
-
-		<?php include( "footer.php" ); ?>
-
-	</div> <!-- /container -->
-
+	<?php include( "footer.php" ); ?>
+	
 	<!-- Le javascript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
