@@ -58,8 +58,6 @@
 			<br>
 		</center>
 
-		<hr>
-
 		<?php include( "footer.php" ); ?>
 
 		</div> <!-- /container -->

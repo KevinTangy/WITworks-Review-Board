@@ -107,8 +107,6 @@
 			</div>
 		</div>
 
-		<hr>
-
 		<?php include( "footer.php" ); ?>
 
 		</div> <!-- /container -->
