@@ -118,24 +118,18 @@
 			
 			<!--This enables the user to contact the admins for additional questions-->
 			<?php
-				$sysmail = "parroj@wit.edu";
+				$sysmail = "tangk2@wit.edu";
 				$from = $_SESSION[ 'username' ] . '@wit.edu';
-				$message = "";
 
-				if ( $_POST[ 'sendmessage' ] )
+				if ( $_SERVER[ "REQUEST_METHOD" ] == "POST" )
 				{
-					//checks if the user entered an actual message
-					if( !isset( $_POST[ 'message'] ) )
+					if( mail( $sysmail, stripslashes( trim( $_POST['subject'] ) ), stripslashes( trim( $_POST[ 'message' ] ) ), "From: " . $from . "\r\n" ) )
 					{
-						$message .= "Please type in a question or message!<br>";
-					}
-					else if( mail( $sysmail, stripslashes( trim( $_POST['subject'] ) ), stripslashes( trim( $_POST['message'] ) ), "From: " . $from . "\r\n" ) )
-					{
-						$message .= "Thanks for contacting us! Someone will get back to you shortly.<br>";
+						$message = '<div class="row"><div class="span5" style="text-align:center"><div class="alert alert-success"><a class="close" data-dismiss="alert" href="#">&times;</a>Thanks for contacting us! Someone will get back to you shortly.</div></div></div>';
 					}
 					else
 					{
-							$messages .= "There was an error in submitting your message... Please try again~<br>";
+						$message = '<div class="row"><div class="span5" style="text-align:center"><div class="alert alert-error"><a class="close" data-dismiss="alert" href="#">&times;</a>There was an error in submitting your message... Please try again~</div></div></div>';
 					}
 				}
 			?>
@@ -146,7 +140,7 @@
 				
 				<form id="contact-form" method="POST" action="">
 					<fieldset>
-						<?php echo $messages; ?>
+						<?php echo $message; ?>
 						<div class="control-group">
 							<div class="controls">
 								<input type="text" name="subject" placeholder="Subject">
@@ -154,10 +148,10 @@
 						</div>
 						<div class="control-group">
 							<div class="controls">
-								<textarea class="input-xxlarge" id="message" rows="7" placeholder="Type your comment, question, or message here!"></textarea>
+								<textarea class="input-xxlarge" name="message" rows="7" placeholder="Type your comment, question, or message here!"></textarea>
 							</div>
 						</div>
-						<button class="btn btn-success" type="submit" name="sendmessage">Send message</button>
+						<button class="btn btn-success" type="submit">Send message</button>
 						<button class="btn btn-info" type="reset">Reset fields</button>
 					</fieldset>
 				</form>
@@ -170,6 +164,8 @@
 	<?php include( "footer.php" ); ?>
 
 	<?php include( "js.php" ); ?>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/validateContactForm.js"></script>
 
 	</body>
 

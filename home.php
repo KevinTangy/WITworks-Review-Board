@@ -61,27 +61,27 @@
 			<!-- page header, news/announcements -->
 			<div class="page-header">
 				<h2>Annoucements</h2>
-					<h3>March 14, 2013</h3>
+				<h3>March 14, 2013</h3>
 					<p>WIT's Career Fair will be in Tansey Gym from 12 to 5 PM.  Be there or be squared!</p>
-					<h3>October 25, 2012</h3>
+				<h3>October 25, 2012</h3>
 					<p>Mock Interview Day will be in Watson Auditorium from 12 to 5 PM.  Be there or be squared!</p>
 			</div>
-	
+			
 			<!-- Example row of columns -->
 			<div class="row">
 				<div class="span4">
 					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<p>Messaging disk, recursive coordinated pulse dithering controller or pc. Logarithmic potentiometer transmission high developer, boolean, gigabyte supporting system development backbone. Silicon debugged developer data cascading cable messaging reducer digital silicon messaging.</p>
 					<p><a class="btn" href="#">View details &raquo;</a></p>
 				</div>
 				<div class="span4">
 					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<p>Floating-point partitioned, developer bridgeware prototype, connectivity adaptive phaselock proxy partitioned, deviation resistor high, audio. Logistically transistorized, floating-point solution bypass interface mainframe led generator converter. Pc transmission partitioned or, pulse echo. </p>
 					<p><a class="btn" href="#">View details &raquo;</a></p>
 				</div>
 				<div class="span4">
 					<h2>Heading</h2>
-					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<p>Floating-point partitioned, developer bridgeware prototype, connectivity adaptive phaselock proxy partitioned, deviation resistor high, audio. Logistically transistorized, floating-point solution bypass interface mainframe led generator converter. Pc transmission partitioned or, pulse echo. </p>
 					<p><a class="btn" href="#">View details &raquo;</a></p>
 				</div>
 			</div>
@@ -92,17 +92,17 @@
 			<div class="row">
 				<div class="span4">
 					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<p>Audio broadband debugged internet, read-only services, reducer, fragmentation developer. Device device, metafile extended element, audio integral kilohertz logarithmic. Harmonic metafile servicing generator record technician integer. Internet adaptive ethernet software encapsulated services reducer silicon port proxy. Logistically logarithmic, dithering interface transponder read-only deviation record.</p>
 					<p><a class="btn" href="#">View details &raquo;</a></p>
 				</div>
 				<div class="span4">
 					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<p>Audio broadband debugged internet, read-only services, reducer, fragmentation developer. Device device, metafile extended element, audio integral kilohertz logarithmic. Harmonic metafile servicing generator record technician integer. Internet adaptive ethernet software encapsulated services reducer silicon port proxy. Logistically logarithmic, dithering interface transponder read-only deviation record.</p>
 					<p><a class="btn" href="#">View details &raquo;</a></p>
 				</div>
 				<div class="span4">
 					<h2>Heading</h2>
-					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<p>Floating-point partitioned, developer bridgeware prototype, connectivity adaptive phaselock proxy partitioned, deviation resistor high, audio. Logistically transistorized, floating-point solution bypass interface mainframe led generator converter. Pc transmission partitioned or, pulse echo.</p>
 					<p><a class="btn" href="#">View details &raquo;</a></p>
 				</div>
 			</div>
