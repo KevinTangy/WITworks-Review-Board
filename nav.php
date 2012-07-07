@@ -7,13 +7,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="#">WITworks Review Board</a>
+				<a class="brand" href="home.php">WITworks Review Board</a>
 				<div class="nav-collapse">
 					<ul class="nav">
-						<li class="active"><a href="home.php">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#post">Post</a></li>
-						<li><a href="#help">Help</a></li>
+						<li <?php if ( $thisPage=="home" ) echo 'class="active"'; ?>><a href="home.php">Home</a></li>
+						<li <?php if ( $thisPage=="about" ) echo 'class="active"'; ?>><a href="about.php">About</a></li>
+						<li <?php if ( $thisPage=="post" ) echo 'class="active"'; ?>><a href="post.php">Post</a></li>
+						<li <?php if ( $thisPage=="help" ) echo 'class="active"'; ?>><a href="help.php">Help</a></li>
 						<li><a href="https://lconnect.wit.edu" target="_blank">Lconnect</a></li>
 					</ul>
 			

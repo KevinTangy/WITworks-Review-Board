@@ -28,6 +28,8 @@
 				padding-top: 60px;
 				padding-bottom: 60px;
 			}
+			/* Space out sub-sections more */
+			section { padding-top: 50px; }
 			.push
 			{
 				height: 60px;

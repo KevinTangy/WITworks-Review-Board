@@ -15,7 +15,7 @@ $(document).ready(function()
 			}
 		},
 		messages:{
-			username:"Your username is the part of your WIT email before the @ symbol.",
+			username:"Enter your username.",
 			password:{
 				required:"Enter your password.",
 				minlength:"Password must be at least 8 characters."

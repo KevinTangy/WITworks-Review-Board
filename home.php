@@ -18,7 +18,7 @@
 	
 	<body>
 
-	<?php include( "nav.php" ); ?>
+	<?php $thisPage = "home"; include( "nav.php" ); ?>
 
 	<div class="wrapper">
 		<div class="container">
