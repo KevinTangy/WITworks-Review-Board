@@ -28,8 +28,9 @@
 				padding-top: 60px;
 				padding-bottom: 60px;
 			}
+			.page-header { padding-bottom: 5px; }
 			/* Space out sub-sections more */
-			section { padding-top: 50px; }
+			section { padding-top: 20px; }
 			.push
 			{
 				height: 60px;
