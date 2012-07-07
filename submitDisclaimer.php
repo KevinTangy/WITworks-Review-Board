@@ -2,13 +2,13 @@
 	// initialize session
 	session_start();
 	
-	if ( $_POST[ 'disclaimer' ] == "agree" )
+	if( $_REQUEST[ 'disclaimer' ] == "I Agree" )
 	{
 		// set disclaimer session variable
-		$_SESSION[ 'disclaimer' ] = $_POST[ 'disclaimer' ];
+		$_SESSION[ 'disclaimer' ] = "agree";
 		header( "Location: login.php" );
 	}
-	else // if( $_POST['disclaimer'] == "disagree" )
+	else
 	{
 		header( "Location: http://wit.edu" );
 	}

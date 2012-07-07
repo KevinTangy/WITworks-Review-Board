@@ -25,11 +25,6 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
 				<a class="brand" href="login.php">WITworks Review Board</a>
 			</div>
 		</div>
@@ -37,26 +32,33 @@
 
 	<div class="wrapper">
 		<div class="container">
-			<center>
-				<br>
-				<h3>User Login</h3>
-				<br>
-    
-				<?php // invalid login error message
-					echo $error;
-				?>
-    
-				<table border="0">
-					<form method="POST" action="">
-						<tr><td>Username:</td><td><input type="text" name="username" size="20"></td></tr>
-						<tr><td>Password:</td><td><input type="password" name="password" size="20"></td></tr>
-						<tr><td>&nbsp;</td><td><input type="submit" name="submit" value="Login"></td></tr>
-						<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
-						<tr><td>&nbsp;</td><td><a href="iforgot.php">forgot password?</a></td></tr>
+			<div class="row">
+				<div class="span5">
+					<form id="login-form" method="POST" action="">
+						<fieldset>
+						<h2>User Login</h2><br>
+						<?php echo $error; ?>
+							<div class="control-group">
+								<div class="controls">
+									<input type="text" name="username" placeholder="Username">
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<input type="password" name="password" placeholder="Password">
+								</div>
+							</div>
+							<button class="btn btn-success" type="submit">Sign in</button>
+							<button class="btn btn-info" type="reset">Reset fields</button>
+							<span class="help-block"><a href="iforgot.php">forgot your password?</a></span>
+						</fieldset>
 					</form>
-				</table>
-				<br>
-			</center>
+				</div>
+				<div class="span6">
+					<h2>What is WRB?</h2><br>
+					<p>WITworks Review Board is a web application which is designed by students for you, the students. The idea behind it is to a have completely centralized location for all your co-op needs. The application allows you to not only post reviews on your own experiences; but also if you are a newer student looking for co-ops or an upper classman looking for a potential job, it can give you a sense of what jobs are out that you can potentially apply for. As long as you are a registered student at Wentworth Institute of Technology, you will be able to access this site.</p>
+				</div>
+			</div>
 		</div> <!-- /container -->
 		<div class="push"></div>
 	</div> <!-- /wrapper -->
@@ -64,6 +66,8 @@
 	<?php include( "footer.php" ); ?>
 
 	<?php include( "js.php" ); ?>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/validateLogin.js"></script>
 
 	</body>
 
