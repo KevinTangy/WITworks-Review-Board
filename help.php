@@ -27,7 +27,7 @@
 							What is WITworks Review Board?
 						</a>
 					</div>
-					<div id="collapseOne" class="accordion-body collapse in">
+					<div id="collapseOne" class="accordion-body collapse">
 						<div class="accordion-inner">
 							WITworks Review Board (WRB) is a CO-OP review site where students can post and read reviews about their own and fellow students experiences in the field. This site allows new students to get an idea of what is out there and what students thought of it. 
 						</div>
@@ -123,7 +123,7 @@
 
 				if ( $_SERVER[ "REQUEST_METHOD" ] == "POST" )
 				{
-					if( mail( $sysmail, stripslashes( trim( $_POST['subject'] ) ), stripslashes( trim( $_POST[ 'message' ] ) ), "From: " . $from . "\r\n" ) )
+					if( mail( $sysmail, stripslashes( trim( $_POST['subject'] ) ), stripslashes( trim( $_POST[ 'message' ] ) ), 'From: ' . $from . PHP_EOL ) )
 					{
 						$message = '<div class="row"><div class="span5" style="text-align:center"><div class="alert alert-success"><a class="close" data-dismiss="alert" href="#">&times;</a>Thanks for contacting us! Someone will get back to you shortly.</div></div></div>';
 					}
