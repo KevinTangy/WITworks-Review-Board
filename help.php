@@ -42,10 +42,9 @@
 					<div id="collapseTwo" class="accordion-body collapse">
 						<div class="accordion-inner">
 							There are two ways to post a review:<br><br>
-							1) You can click on the Post tab in the Navigation Bar. This will take you directly to the Post page 
-							where you can fill in the required boxes, select ratings and then hit the “Post” button. 
+							1) You can click on the Post tab in the Navigation Bar. This will take you directly to the Post page where you can fill in the required boxes, select ratings and then hit the POST button. 
 							<br><br>
-							2) You can click on the Search tab in the Navigation Bar. This will take you to a page with the list of majors that are offered at Wentworth. You can click on the major and it will expand to a list of companies that have been worked at. You can click on the desired company, scroll to the bottom of the company page and then click the “Post a Review” button. It will take you to a page where you will fill in the required boxes, select 1-5 star rating(s) and then hit the “Post” button.
+							2) You can click on the Search tab in the Navigation Bar. This will take you to a page with the list of majors that are offered at Wentworth. You can click on the major and it will expand to a list of companies that have been worked at. You can click on the desired company, scroll to the bottom of the company page and then click the POST A REVIEW button. It will take you to a page where you will fill in the required boxes, select 1-5 star rating(s) and then hit the POST button.
 						</div>
 					</div>
 				</div>
@@ -57,7 +56,7 @@
 					</div>
 					<div id="collapseThree" class="accordion-body collapse">
 						<div class="accordion-inner">
-							This website is strictly for registered students of Wentworth Institute of Technology. In order to log in, your username will be the username from your email and your password will be set to the default password until changed using the “Change Password” option in the “My profile” page.<br><br>
+							This website is strictly for registered students of Wentworth Institute of Technology. In order to log in, your username will be the username from your email and your password will be set to the default password until changed using the CHANGE PASSWORD option in the MY PROFILE page.<br><br>
 							Example: <br>
 							Username: doej (email: doej@wit.edu) <br>
 							Password: *****
@@ -72,7 +71,7 @@
 					</div>
 					<div id="collapseFour" class="accordion-body collapse">
 						<div class="accordion-inner">
-							The way it calculates that it’s a top company is actually done with simple math. To find out who has the highest rating is determined by adding up all the stars and then diving by the number of reviews. Thus the 5 companies with the highest number of starts are the top 5.
+							The way it calculates the top company is actually done with simple math. To find out who has the highest rating is determined by adding up all the stars and then diving by the number of reviews. Thus the 5 companies with the highest number of starts are the top 5.
 						</div>
 					</div>
 				</div>
@@ -84,7 +83,7 @@
 					</div>
 					<div id="collapseFive" class="accordion-body collapse">
 						<div class="accordion-inner">
-							To change your password, you click on the “My Profile” tab on the Navigation Bar. Then you enter your current password, then your new password and then you confirm the new password. If you forgot your password, on the Login page, there is a link to a change your password page. Once on the page, you enter your Wentworth email, and a randomly generated password is then emailed to you.
+							To change your password, you click on the My Profile tab on the Navigation Bar. Then you enter your current password, then your new password and then you confirm the new password. If you forgot your password, on the Login page, there is a link to a change your password page. Once on the page, you enter your Wentworth email, and a randomly generated password is then emailed to you.
 						</div>
 					</div>
 				</div>
@@ -110,7 +109,7 @@
 					</div>
 					<div id="collapseSeven" class="accordion-body collapse">
 						<div class="accordion-inner">
-							If you are searching for your company to post a review but do not see it, you will need to add it. To do this, click on the Post Tab to go directly to the Post page. Then in the Company drop down box, scroll to the bottom and select “Other”. A new box will appear on the page below for you to manually enter the company name. Just make sure that you spell the company’s name right! Then continue on and finish the post form and post the review. Then if you go back to the Search page, the company that you just added should now be listed.
+							If you are searching for your company to post a review but do not see it, you will need to add it. To do this, click on the Post Tab to go directly to the Post page. Then in the Company drop down box, scroll to the bottom and select OTHER. A new box will appear on the page below for you to manually enter the company name. Just make sure that you spell the company's name right! Then continue on and finish the post form and post the review. Then if you go back to the Search page, the company that you just added should now be listed.
 						</div>
 					</div>
 				</div>
