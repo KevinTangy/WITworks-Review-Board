@@ -36,7 +36,7 @@
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-							How do I post?
+							How do I post a review?
 						</a>
 					</div>
 					<div id="collapseTwo" class="accordion-body collapse">
@@ -51,7 +51,7 @@
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-							Who can post? Do I need to be a Wentworth Student to post a review?
+							Who can post? Do I need to be a Wentworth student to post a review?
 						</a>
 					</div>
 					<div id="collapseThree" class="accordion-body collapse">
@@ -66,7 +66,7 @@
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-							How do you calculate for the top 5 companies?
+							How do you calculate the top 5 companies?
 						</a>
 					</div>
 					<div id="collapseFour" class="accordion-body collapse">
@@ -78,7 +78,7 @@
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
-							How do I change my password? What if I forget my password?
+							How do I change my password? What if I forgot my password?
 						</a>
 					</div>
 					<div id="collapseFive" class="accordion-body collapse">
