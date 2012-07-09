@@ -10,6 +10,5 @@ WITworks Review Board is a web application which is designed by students for you
 
 
 ### The web app is currently in production at:
-
-	http://WITworksReviewBoard.com
+	[http://WITworksReviewBoard.com](http://WITworksReviewBoard.com)
 
