@@ -33,15 +33,15 @@
 					<div class="item active">
 						<img src="img/01.jpg" alt="">
 						<div class="carousel-caption">
-							<h4>First Thumbnail label</h4>
-							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<h4>Top Employer - Kaspersky Lab USA</h4>
+							<p>Kaspersky Lab is one of the fastest growing IT security companies worldwide. Today, it is firmly positioned as one of the world’s top four leading vendors of endpoint security software.</p>
 						</div>
 					</div>
 					<div class="item">
-						<img src="img/02.jpg" alt="">
+						<a href="http://www.wit.edu/features/2012/02/2012-02-16.html"><img src="img/02.jpg" alt=""></a>
 						<div class="carousel-caption">
-							<h4>Second Thumbnail label</h4>
-							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<h4>Phil Duffy, Computer Networking '12</h4>
+							<p>Junior Developer at Terrible Labs. Click on the picture to read more.</p>
 						</div>
 					</div>
 					<div class="item">
@@ -60,7 +60,7 @@
 			
 			<!-- page header, news/announcements -->
 			<div class="page-header">
-				<h2>Annoucements</h2>
+				<h2>Announcements</h2>
 				<h3>March 14, 2013</h3>
 					<p>WIT's Career Fair will be in Tansey Gym from 12 to 5 PM.  Be there or be squared!</p>
 				<h3>October 25, 2012</h3>

@@ -31,7 +31,7 @@
 								echo '<a href="#" class="dropdown-toggle" data-toggle="dropdown">' . $name[ 0 ] . " " . $name[ 1 ] . ' <b class="caret"></b></a>';
 							?>
 							<ul class="dropdown-menu">
-								<li><a href="#">My Profile</a></li>
+								<li><a href="myProfile.php">My Profile</a></li>
 								<?php
 									if ( include( "checkAdmin.php" ) )
 									{
