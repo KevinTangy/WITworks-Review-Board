@@ -44,10 +44,9 @@
 				</div>
 	
 			</div><!--/row-->
-	
-			<?php include( "footer.php" ); ?>
-			<?php include( "js.php" ); ?>
 		</div><!--/.fluid-container-->
 	</div><!--/wrapper-->
 
+	<?php include( "footer.php" ); ?>
+	<?php include( "js.php" ); ?>
 	</body>
