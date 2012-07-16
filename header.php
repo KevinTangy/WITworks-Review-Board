@@ -10,53 +10,7 @@
 		<!-- Le styles -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-		<style type="text/css">
-			html, body
-			{
-				height: 100%;
-			}
-			.span12 { text-align: center; }
-			.wrapper
-			{
-				min-height: 100%;
-				height: auto !important;
-				height: 100%;
-				margin: 0 auto -70px;
-			}
-			.wrapper > .container
-			{
-				padding-top: 60px;
-				padding-bottom: 60px;
-			}
-			.page-header { padding-bottom: 5px; }
-			/* Space out sub-sections more */
-			section { padding-top: 20px; }
-			.push
-			{
-				height: 60px;
-			}
-			footer
-			{
-				color: #666;
-				background: #222;
-				height: 60px;
-				text-align: center;
-				padding-top: 10px;
-			}
-			@media (max-width: 767px)
-			{
-				.wrapper .container { padding-top: 0; }
-				footer { margin-left: -20px; margin-right: -20px; }
-				footer .container { padding-left: 20px; padding-right: 20px; }
-			}
-			@media (max-width: 979px)
-			{	
-				.wrapper .container { padding-top: 0; }
-				footer { position: static; }
-			}
-			@media (min-width: 1200px) { }
-		</style>
-		<!-- <link href="css/custom.css" rel="stylesheet"> -->
+		<link href="css/custom.css" rel="stylesheet">
 	
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
@@ -85,6 +39,15 @@
 					break;
 				case "/home.php":
 					$title .= " - Home";
+					break;
+				case "/postReview.php":
+					$title .= " - Post Co-op Review";
+					break;
+				case "/myProfile.php":
+					$title .= " - My Profile";
+					break;
+				case "/admin.php":
+					$title .= " - Admin Dashboard";
 					break;
 				case "/index.php": default:
 					break;

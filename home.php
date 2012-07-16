@@ -27,33 +27,70 @@
 				<h1>Welcome, <?php echo $name[ 0 ]; ?>!</h1>
 			</div>
 	
-			<!-- Main carousel (slider) unit -->
-			<div id="myCarousel" class="carousel slide">
-				<div class="carousel-inner">
-					<div class="item active">
-						<img src="img/01.jpg" alt="">
-						<div class="carousel-caption">
-							<h4>Top Employer - Kaspersky Lab USA</h4>
-							<p>Kaspersky Lab is one of the fastest growing IT security companies worldwide. Today, it is firmly positioned as one of the world’s top four leading vendors of endpoint security software.</p>
+			<div class="row">
+				<div class="span8">
+					<!-- Main carousel (slider) unit -->
+					<div id="myCarousel" class="carousel slide">
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/01.jpg" alt="">
+								<div class="carousel-caption">
+									<h4>Top Employer - Kaspersky Lab USA</h4>
+									<p>Kaspersky Lab is one of the fastest growing IT security companies worldwide. Today, it is firmly positioned as one of the world’s top four leading vendors of endpoint security software.</p>
+								</div>
+							</div>
+							<div class="item">
+								<a href="http://www.wit.edu/features/2012/02/2012-02-16.html"><img src="img/02.jpg" alt=""></a>
+								<div class="carousel-caption">
+									<h4>Phil Duffy, Computer Networking '12</h4>
+									<p>Junior Developer at Terrible Labs. Click on the picture to read more.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/03.jpg" alt="">
+								<div class="carousel-caption">
+									<h4>Third Thumbnail label</h4>
+									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="item">
-						<a href="http://www.wit.edu/features/2012/02/2012-02-16.html"><img src="img/02.jpg" alt=""></a>
-						<div class="carousel-caption">
-							<h4>Phil Duffy, Computer Networking '12</h4>
-							<p>Junior Developer at Terrible Labs. Click on the picture to read more.</p>
-						</div>
-					</div>
-					<div class="item">
-						<img src="img/03.jpg" alt="">
-						<div class="carousel-caption">
-							<h4>Third Thumbnail label</h4>
-							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						</div>
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 					</div>
 				</div>
-				<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-				<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				<div class="span4">
+					<div class="page-header">
+						<h2>Career Services Twitter Feed</h2>
+					</div>
+					<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+					<script>
+						new TWTR.Widget({
+							version: 2,
+							type: 'profile',
+							rpp: 4,
+							interval: 30000,
+							width: 'auto',
+							height: 250,
+							theme: {
+							shell: {
+							background: '#333333',
+							color: '#cfb43b'
+							},
+							tweets: {
+							background: '#000000',
+							color: '#ffffff',
+							links: '#cfb43b'
+							}
+							},
+							features: {
+							scrollbar: true,
+							loop: false,
+							live: true,
+							behavior: 'all'
+							}
+							}).render().setUser('WITCareerServ').start();
+					</script>
+				</div>
 			</div>
 			
 			<hr>

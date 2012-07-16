@@ -1,20 +1,85 @@
-
-/*html, body { background-image:url( '../img/dark_wood.png' ); }*/
-/*.container { background-color:#fff; }*/
-.container > footer p { text-align:center; }
-/*footer { border:none; margin:1em; }*/
-
-/*.navbar .nav > li > a
+html, body
 {
-	color: #fff;
+	height: 100%;
 }
 
-.navbar-inner
-{
-	background-color: #e03a3e;
-	background-image: -webkit-linear-gradient(top, #e03a3e, #AD1D28);
-	background-image: -o-linear-gradient(top, #e03a3e, #AD1D28);
-	background-image: linear-gradient(top, #e03a3e, #AD1D28);
-}*/
+.span12 { text-align: center; }
 
+.wrapper
+{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -70px;
+}
+
+.wrapper > .container
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.page-header { padding-bottom: 5px; }
+
+/* Space out sub-sections more */
+section { padding-top: 20px; }
+
+.push
+{
+	height: 60px;
+}
+
+footer
+{
+	color: #666;
+	background: #222;
+	height: 60px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+@media (max-width: 767px)
+{
+	.wrapper .container { padding-top: 0; }
+	footer { margin-left: -20px; margin-right: -20px; }
+	footer .container { padding-left: 20px; padding-right: 20px; }
+	.navbar .brand { text-replace: "WITworks Review Board" "WRB"; };
+}
+
+@media (max-width: 979px)
+{	
+	.wrapper .container { padding-top: 0; }
+	footer { position: static; }
+}
+
+@media (min-width: 1200px) { }
+
+/* Search in navbar + plus search icon */
+.navbar-search
+{
+    position: relative;
+}
+  
+.navbar-search .search-query
+{
+    padding-left: 29px;
+}
+
+.navbar-search .icon-search
+{
+    position: absolute;
+    top: 7px;
+    left: 11px;
+    background-image: url( "http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings-white.png" );
+}
+
+.navbar-search .search-query:focus, .navbar-search .search-query.focused
+{
+    padding-left: 30px;
+}
+
+.search-query:focus + .icon-search
+{
+    background-image: url( "http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png" );
+}
 
