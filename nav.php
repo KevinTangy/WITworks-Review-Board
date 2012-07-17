@@ -42,12 +42,13 @@
 						<li <?php if ( $thisPage=="post" ) echo 'class="active"'; ?>><a href="postReview.php">Post</a></li>
 						<li <?php if ( $thisPage=="help" ) echo 'class="active"'; ?>><a href="help.php">Help</a></li>
 						<li><a href="https://lconnect.wit.edu" target="_blank">Lconnect</a></li>
+						<li>
+							<form class="navbar-search pull-left" action="search.php" method="post">
+								<input class="search-query span3" placeholder="Search for a company" type="text">
+								<div class="icon-search"></div>
+							</form>
+						</li>
 					</ul>
-			
-					<form class="navbar-search pull-left" action="">
-						<input class="search-query span3" placeholder="Search for a company" type="text">
-						<div class="icon-search"></div>
-					</form>
 				</div><!--/.nav-collapse -->
 			</div>
 		</div>

@@ -4,10 +4,10 @@
 	
 	// if user is not logged in and has accepted disclaimer, redirect to login page, else if disclaimer has not been accepted, redirect to splash
 	include( "checkSession.php" );
+	
+	include( "header.php" );
 ?>
 
-	<?php include( "header.php" ); ?>
-	
 	
 	<body>
 

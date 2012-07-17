@@ -38,7 +38,7 @@
 							$result = mysql_query( $query ) or die(mysql_error());
 							$row = mysql_fetch_array( $result );
 				
-							echo '<br><h1>' . $row[ 2 ] . ' ' . $row[ 1 ] . '</h1>Student ID:<br><b>'. $row[ 0 ] .  '</b><br><br>Email Address:<br><b>' . $row[ 3 ] . '</b><br><br>Major:<br><b>' . $row[ 5 ]. '</b><br><br>Expected Year of Graduation:<br><b>' . $row[ 4 ] . '</b><br>';
+							echo '<h2>' . $row[ 2 ] . ' ' . $row[ 1 ] . '</h2><br>Student ID:<br><b>'. $row[ 0 ] .  '</b><br><br>Email Address:<br><b>' . $row[ 3 ] . '</b><br><br>Major:<br><b>' . $row[ 5 ]. '</b><br><br>Expected Year of Graduation:<br><b>' . $row[ 4 ] . '</b><br>';
 						?>
 					</div>
 				</div>

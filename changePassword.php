@@ -47,7 +47,7 @@
 								if ( $message != NULL )
 									echo "<font color='white'><h3>" . $message . "</h3></font>";
 								else
-									echo "<h3>Change your password below.</h3>";
+									echo "<h3>Change your password below</h3><br>";
 							?>
 							Current Password:<br><input class="validate[required]" type="password" name="old_password" id="old_password" size="20" data-prompt-position="centerRight"><br><br><br>
 							New Password:<br><input class="validate[required]" type="password" name="password1" id="password1" size="20" data-prompt-position="centerRight"><br><br>

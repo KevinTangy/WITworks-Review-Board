@@ -11,9 +11,9 @@
 	{
 		header( "Location: splash.php" );
 	}
+	
+	include( "header.php" );
 ?>
-
-	<?php include( "header.php" ); ?>
 	
 	
 	<body>
@@ -36,7 +36,7 @@
 								<img src="img/01.jpg" alt="">
 								<div class="carousel-caption">
 									<h4>Top Employer - Kaspersky Lab USA</h4>
-									<p>Kaspersky Lab is one of the fastest growing IT security companies worldwide. Today, it is firmly positioned as one of the world’s top four leading vendors of endpoint security software.</p>
+									<p>Kaspersky Lab is one of the fastest growing IT security companies worldwide. Today, it is firmly positioned as one of the world's top four leading vendors of endpoint security software.</p>
 								</div>
 							</div>
 							<div class="item">

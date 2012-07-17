@@ -42,7 +42,7 @@
 							if ( mysql_num_rows( $result ) != 0 )
 							{				
 								$counter = 1;
-								echo "<br><br><h2> My Reviews </h2>";
+								echo "<h3> My Reviews </h3>";
 								while( $row = mysql_fetch_array( $result ) )
 								{
 									$star_rating = 
