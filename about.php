@@ -38,7 +38,7 @@
 				<div class="span4 offset4">
 					<img src="img/kevin.png">
 					<h2>Kevin Tang</h2>
-					<p><strong>The leader.</strong> Kevin is the project manager of WITworks Review Board. His passion for coding and programming language expertise makes him a great leader. In his spare time, Kevin likes to take pictures with Instagram and work full time at Wayfair.</p>
+					<p><strong>The leader.</strong> Kevin is the project manager of WITworks Review Board. His passion for coding and his programming language expertise makes him a great leader. In his spare time, Kevin likes to take pictures with Instagram and work full time at Wayfair.</p>
 				</div>
 			</div>
 			
@@ -51,7 +51,7 @@
 				<div class="span4">
 					<img src="img/ian.png">
 					<h2>Ian Duncan</h2>
-					<p><strong>The smooth talker.</strong> Ian oversees all the documentation and presentation aspect of the project. No one can sell this website to someone better than Ian. He can whip up a presentation like no other. He has a way with words and it's probably why his girlfriend of 4 and a half years, Krystal, is still with him. </p>
+					<p><strong>The smooth talker.</strong> Ian oversees all the documentation and presentation aspect of the project. No one can sell this website to someone better than Ian. He can whip up a presentation like no other. He has a way with words which is probably why his girlfriend of 4 and a half years, Krystal, is still with him. </p>
 				</div>
 			</div>
 			
@@ -59,7 +59,7 @@
 				<div class="span4 offset4">
 					<img src="img/dan.png">
 					<h2>Dan Collins</h2>
-					<p><strong>The one that got away.</strong> Dan played a big role in the early stages of WITworks Review Board. For his senior project he decided to join a different team but we want to acknowledge all his contribution and we wanted him to know that we miss him everyday!</p>
+					<p><strong>The one that got away.</strong> Dan played a big role in the early stages of WITworks Review Board. For his senior project he decided to join a different team but we want to acknowledge all his contribution and wanted him to know that we miss him dearly!</p>
 				</div>
 			</div>
 			

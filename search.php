@@ -5,43 +5,25 @@
 	// if user is not logged in and has accepted disclaimer, redirect to login page, else if disclaimer has not been accepted, redirect to splash
 	include( "checkSession.php" );
 
-	if ( $_SERVER[ "REQUEST_METHOD" ] == "POST" )
+	if ( $_SERVER[ "REQUEST_METHOD" ] == "GET" )
 	{
 		// database connection settings
 		include( 'config.php' );
 	
-		$searchString = @$_POST[ 'company' ]; //this is the string they searched for
-		
-		if ( $searchString == "" )
-			$searchString = "!";
+		$searchString = @$_GET[ 'company' ]; //this is the string they searched for
 	
 		// Build SQL Query  
-		$query = "SELECT * FROM Company WHERE CompanyName LIKE '" . mysql_real_escape_string( $searchString ) . "%'";
+		$query = "SELECT * FROM Company WHERE CompanyName = '" . mysql_real_escape_string( $searchString ) . "%'";
 	
 		$rows = mysql_query( $query ) or die( mysql_error() );
 	
 		if ( mysql_num_rows( $rows ) == 0 )
 		{
-			$message = "No matches found. Please try again~";  // alert
-			// basic search form here
-			// with advanced search by major
-			$resultsPage = '
-				<div class="page-header">
-					<h2>No search results for companies starting with "'<?php echo $searchString; ?>'"</h2>
-				</div>
-				
-				<div class="row">
-					<div class="span6">
-						<form class="form-search">
-							<input type="text" class="input-medium search-query">
-							<button type="submit" class="btn">Search</button>
-						</form>
-					</div>
-					<div class="span6">
-						*Search by major goes here*
-					</div>
-				</div>
-				';
+			$error = '<div class="row"><div class="span5" style="text-align:center"><div class="alert alert-error"><a class="close" data-dismiss="alert" href="#">&times;</a>No search results for companies matching "' . $searchString . '"</div></div></div>';
+			
+			ob_start();
+			include( "companyAccordion.php" );
+			$resultsPage = ob_get_clean();
 		}
 		else
 		{
@@ -51,25 +33,10 @@
 	}
 	else
 	{
-		// basic search form here
-		// with advanced search by major
-		$resultsPage = '
-			<div class="page-header">
-				<h2>Search for co-op companies</h2>
-			</div>
-			
-			<div class="row">
-				<div class="span6">
-					<form class="form-search">
-						<input type="text" class="input-medium search-query">
-						<button type="submit" class="btn">Search</button>
-					</form>
-				</div>
-				<div class="span6">
-					*Search by major goes here*
-				</div>
-			</div>
-			';
+		$error = "";
+		ob_start();
+		include( "companyAccordion.php" );
+		$resultsPage = ob_get_clean();
 	}
 	
 	include( "header.php" );
@@ -83,7 +50,7 @@
 	<div class="wrapper">
 		<div class="container">
 			
-			<?php echo $resultsPage; ?>
+			<?php echo $error; echo $resultsPage; ?>
 			
 		</div> <!-- /container -->
 		<div class="push"></div>

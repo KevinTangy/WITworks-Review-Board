@@ -43,8 +43,8 @@
 						<li <?php if ( $thisPage=="help" ) echo 'class="active"'; ?>><a href="help.php">Help</a></li>
 						<li><a href="https://lconnect.wit.edu" target="_blank">Lconnect</a></li>
 						<li>
-							<form class="navbar-search pull-left" action="search.php" method="post">
-								<input class="search-query span3" placeholder="Search for a company" type="text">
+							<form class="navbar-search pull-left" action="search.php" method="get">
+								<input class="search-query span3" placeholder="Search for a company" type="text" name="company">
 								<div class="icon-search"></div>
 							</form>
 						</li>
