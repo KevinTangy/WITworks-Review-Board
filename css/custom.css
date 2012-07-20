@@ -38,22 +38,6 @@ footer
 	padding-top: 10px;
 }
 
-@media (max-width: 767px)
-{
-	.wrapper .container { padding-top: 0; }
-	footer { margin-left: -20px; margin-right: -20px; }
-	footer .container { padding-left: 20px; padding-right: 20px; }
-	.navbar .brand { text-replace: "WITworks Review Board" "WRB"; };
-}
-
-@media (max-width: 979px)
-{	
-	.wrapper .container { padding-top: 0; }
-	footer { position: static; }
-}
-
-@media (min-width: 1200px) { }
-
 /* Search in navbar + plus search icon */
 .navbar-search
 {
@@ -80,6 +64,22 @@ footer
 
 .search-query:focus + .icon-search
 {
-    background-image: url( "http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png" );
+    background-image: url( "/img/glyphicons-halflings.png" );
 }
 
+
+@media (max-width: 767px)
+{
+	.wrapper .container { padding-top: 0; }
+	footer { margin-left: -20px; margin-right: -20px; }
+	footer .container { padding-left: 20px; padding-right: 20px; }
+}
+
+@media (max-width: 979px)
+{	
+	.wrapper .container { padding-top: 0; }
+	footer { position: static; }
+	.navbar-search .icon-search { top: 16px; left: 25px; }
+}
+
+@media (min-width: 1200px) { }

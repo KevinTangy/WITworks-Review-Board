@@ -60,7 +60,7 @@
 				</div>
 				<div class="span4">
 					<div class="page-header">
-						<h2>Career Services Twitter Feed</h2>
+						<h2>Career Services Twitter</h2>
 					</div>
 					<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 					<script>

@@ -43,6 +43,9 @@
 				case "/postReview.php":
 					$title .= " - Post Co-op Review";
 					break;
+				case "/search.php":
+					$title .= " - Search";
+					break;
 				case "/myProfile.php":
 					$title .= " - My Profile";
 					break;

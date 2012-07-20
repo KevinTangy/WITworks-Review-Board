@@ -13,7 +13,7 @@
 		$searchString = @$_GET[ 'company' ]; //this is the string they searched for
 	
 		// Build SQL Query  
-		$query = "SELECT * FROM Company WHERE CompanyName = '" . mysql_real_escape_string( $searchString ) . "%'";
+		$query = "SELECT * FROM Company WHERE CompanyName LIKE '" . mysql_real_escape_string( $searchString ) . "%'";
 	
 		$rows = mysql_query( $query ) or die( mysql_error() );
 	
@@ -22,20 +22,27 @@
 			$error = '<div class="row"><div class="span5" style="text-align:center"><div class="alert alert-error"><a class="close" data-dismiss="alert" href="#">&times;</a>No search results for companies matching "' . $searchString . '"</div></div></div>';
 			
 			ob_start();
-			include( "companyAccordion.php" );
+			include( "searching.php" );
+			$resultsPage = ob_get_clean();
+		}
+		else if ( $searchString == "" )
+		{
+			ob_start();
+			include( "searching.php" );
 			$resultsPage = ob_get_clean();
 		}
 		else
 		{
-			// search results!
+			ob_start();
+			include( "searchResults.php" );
+			$resultsPage = ob_get_clean();
 			// header( "Location: viewCompany.php?company=" . urlencode( $searchString ) );
 		}
 	}
 	else
 	{
-		$error = "";
 		ob_start();
-		include( "companyAccordion.php" );
+		include( "searching.php" );
 		$resultsPage = ob_get_clean();
 	}
 	
@@ -50,7 +57,15 @@
 	<div class="wrapper">
 		<div class="container">
 			
-			<?php echo $error; echo $resultsPage; ?>
+			<?php
+				echo $error;
+				if ( !empty( $resultsPage ) )
+					echo $resultsPage;
+				else
+				{
+					include( "searching.php" );
+				}
+			?>
 			
 		</div> <!-- /container -->
 		<div class="push"></div>

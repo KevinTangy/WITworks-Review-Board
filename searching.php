@@ -35,6 +35,8 @@
 						}
 						echo '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse' . $count . '">' . $row[ 1 ] . '</a></div>'; // major name
 						echo '<div id="collapse' . $count . '" class="accordion-body collapse"><div class="accordion-inner"><p><a href="viewCompany.php?company=' . urlencode( $row[ 0 ] ) . '">' . $row[ 0 ] . '</a></p>'; // company name
+						
+						$count++; // just a counter for the loop, equal to the number of entries in the company_by_major table, this number isnt very important to us, we just need to know when its 0 in this loop see line 18
 					}
 					else // else if the same major turns up twice in a row in the table of results
 					{
@@ -42,11 +44,10 @@
 					}
 
 					$previousMajor = $row[ 2 ]; // previousMajor is now the major ID of the current row, go to top of loop
-					$count++; // just a counter for the loop, equal to the number of entries in the company_by_major table, this number isnt very important to us, we just need to know when its 0 in this loop see line 18
 				}
 
 				echo '</div></div></div>';
 			?>
 	
-			</div>
 		</div>
+	</div>
