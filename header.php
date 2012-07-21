@@ -46,6 +46,9 @@
 				case "/search.php":
 					$title .= " - Search";
 					break;
+				case "/viewCompany.php":
+					$title .= " - View Company - " . $company;
+					break;
 				case "/myProfile.php":
 					$title .= " - My Profile";
 					break;
