@@ -38,6 +38,8 @@ footer
 	padding-top: 10px;
 }
 
+#reviewpost .row .span2 { padding-bottom: 15px; }
+
 /* Search in navbar + plus search icon */
 .navbar-search
 {

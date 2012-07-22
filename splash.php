@@ -23,7 +23,7 @@
 			</div>
 			<div class="row">
 				<div class="span12">
-					<form class="form-vertical" id="disclaimer" name="disclaimer" action="submitDisclaimer.php">
+					<form class="form-vertical" name="disclaimer" action="submitDisclaimer.php">
 						<input type="submit" name="disclaimer" class="btn btn-info" value="I Agree">
 						<input type="submit" name="disclaimer" class="btn btn-danger" value="I Do NOT Agree">
 					</form>

@@ -36,7 +36,7 @@
 
 	<body>
 
-	<?php $thisPage = "viewCompany"; include( "nav.php" ); ?>
+	<?php $thisPage = "viewCompany"; include( "nav.php" ); include( "js.php" ); echo '<script src="js/jquery.raty.min.js"></script>'; ?>
 
 	<div class="wrapper">
 		<div class="container">
@@ -84,7 +84,8 @@
 						
 						echo rtrim( $majorsList, ", " );
 						
-						echo '<br><br><br><font size="-1">' . $row[ 1 ] . " has " . $reviewCount . ' ' . $grammarReview . '.</font>';
+						echo '<br><br><br>' . $row[ 1 ] . " has " . $reviewCount . ' ' . $grammarReview . '.<br><br><br>';
+						echo '<button class="btn btn-primary" href="postReview.php?company=' . urlencode( $companyName ) . '"> Post your own review for ' . $companyName . ' </button><br><br>';
 					?>
 				</div>
 				
@@ -97,8 +98,6 @@
 	</div> <!-- /wrapper -->
 	
 	<?php include( "footer.php" ); ?>
-
-	<?php include( "js.php" ); ?>
 
 	</body>
 

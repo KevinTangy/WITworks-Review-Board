@@ -52,7 +52,7 @@
 
 	<body>
 
-	<?php $thisPage = "search"; include( "nav.php" ); ?>
+	<?php $thisPage = "search"; include( "nav.php" ); include( "js.php" ); echo '<script src="js/jquery.raty.min.js"></script>'; ?>
 
 	<div class="wrapper">
 		<div class="container">
@@ -72,8 +72,6 @@
 	</div> <!-- /wrapper -->
 	
 	<?php include( "footer.php" ); ?>
-
-	<?php include( "js.php" ); ?>
 
 	</body>
 
