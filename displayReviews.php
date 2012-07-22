@@ -99,16 +99,27 @@
 			
 			echo "<b>Job Description: </b><br>" . $row[ 1 ] . "<br><br><b>Comments: </b><br>" . $row[ 2 ] . "<br><br>";
 
-			echo "<div class=\"row\"><div class=\"span4\">- Class of  " . $row[ 7 ] . " " . $row[ 6 ] . "</div><div class=\"span4\" style=\"text-align: right; font-size: x-small;\">Posted at " . $time . " on " . $date . "</div></div>";
+			echo "<div class=\"row\"><div class=\"span3\">- Class of  " . $row[ 7 ] . " " . $row[ 6 ] . "</div><span style=\"float:right; font-size: x-small;\">Posted at " . $time . " on " . $date . "</span></div>";
 			
 			// like/dislike and flagging components
 			$arr = mysql_fetch_array( mysql_query( "SELECT LIKES,DISLIKES FROM Reviews WHERE ReviewID ='" . $row[ 12 ]. "'" ) );
 			$l = $arr[ 'LIKES' ];
 			$d = $arr[ 'DISLIKES' ];
-			echo
+			/*echo
 				'<div class="like"><a href="" class="vote" id="' . $row[ 12 ] . '" name="like"><img src="images/likeup_green.png"/>Like <b>' . $l . '</b></a></div>
 				<div class="dislike"><a href="" class="vote" id="' . $row[ 12 ] . '" name="dislike"><img src="images/likedown_red.png"/> <b>' . $d . '</b></a></div>
-				<div class="flag"><a href="" class="vote" id="' . $row[ 12 ] . '" name="flag"><img src="images/flag_red.png" alt="Flag review as inappropriate"/></a></div>';
+				<div class="flag"><a href="" class="vote" id="' . $row[ 12 ] . '" name="flag"><img src="images/flag_red.png" alt="Flag review as inappropriate"/></a></div>';*/
+				
+			echo
+				'<div class="row" style="padding-top: 15px;">
+					<div class="btn-group span3">
+						<button href="#" class="vote btn btn-mini btn-success" id="' . $row[ 12 ] . '" name="like"><i class="icon-thumbs-up icon-white"></i> Like <b>' . $l . '</b></button>
+						<button href="#" class="vote btn btn-mini btn-danger" id="' . $row[ 12 ] . '" name="dislike"><i class="icon-thumbs-down icon-white"></i> <b>' . $d . '</b></button>
+					</div>
+					<div style="float:right;">
+						<button href="#" class="vote btn btn-mini" id="' . $row[ 12 ] . '" name="flag"><i class="icon-flag"></i></button>
+					</div>
+				</div>';
 			
 			echo '<br><br></div>';
 			
@@ -117,6 +128,6 @@
 	}
 	else //if there are no reviews posted for the company yet, a message is displayed
 	{
-		echo "<br><br><h3>No reviews yet for " . $companyName . "! :(</h3>";
+		echo "<br><br><h3 style='text-align: center;'>No reviews yet for " . $companyName . "!  :(</h3>";
 	}
 ?>

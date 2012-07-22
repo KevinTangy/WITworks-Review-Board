@@ -36,7 +36,6 @@
 			ob_start();
 			include( "searchResults.php" );
 			$resultsPage = ob_get_clean();
-			// header( "Location: viewCompany.php?company=" . urlencode( $searchString ) );
 		}
 	}
 	else

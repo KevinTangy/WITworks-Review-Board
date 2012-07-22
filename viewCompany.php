@@ -36,7 +36,7 @@
 
 	<body>
 
-	<?php $thisPage = "viewCompany"; include( "nav.php" ); include( "js.php" ); echo '<script src="js/jquery.raty.min.js"></script>'; ?>
+	<?php $thisPage = "viewCompany"; include( "nav.php" ); include( "js.php" ); echo '<script src="js/jquery.raty.min.js"></script><script src="js/likes.js"></script>'; ?>
 
 	<div class="wrapper">
 		<div class="container">
@@ -59,11 +59,11 @@
 						//prints to screen LOGO, Company Name, Company URL, Company Description
 						if ( file_exists( $_SERVER{'DOCUMENT_ROOT'} . "/img/logos/" . $companyID . ".png" ) )
 						{
-							echo '<h2>'. $row[1] .'</h2><br><img src="/img/logos/' . $row[0] . '.png"  width="100%"><br><br>';
+							echo '<h2>'. $row[1] .'</h2><br><img src="/img/logos/' . $row[0] . '.png" width="100%" style="border:1px solid black"><br><br>';
 						}
 						else
 						{
-							echo '<h2>'. $row[1] .'</h2><br><img src="/img/logos/newcompany.png"  width="100%"><br><br>';
+							echo '<h2>'. $row[1] .'</h2><br><img src="/img/logos/newcompany.png" width="100%" style="border:1px solid black"><br><br>';
 						}
 								
 						if ( $row[ 2 ] != "Website pending..." )
@@ -85,7 +85,7 @@
 						echo rtrim( $majorsList, ", " );
 						
 						echo '<br><br><br>' . $row[ 1 ] . " has " . $reviewCount . ' ' . $grammarReview . '.<br><br><br>';
-						echo '<button class="btn btn-primary" href="postReview.php?company=' . urlencode( $companyName ) . '"> Post your own review for ' . $companyName . ' </button><br><br>';
+						echo '<a class="btn btn-primary" href="postReview.php?company=' . urlencode( $companyName ) . '">Post your own review for ' . $companyName . '</a><br><br>';
 					?>
 				</div>
 				
