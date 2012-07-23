@@ -31,10 +31,27 @@
 				<div class="span4" style="padding-bottom: 20px;">
 					<h2>Posting Guidelines</h2>
 					<p>
-						Messaging disk, recursive coordinated pulse dithering controller or pc. Logarithmic potentiometer transmission high developer, boolean, gigabyte supporting system development backbone. Silicon debugged developer data cascading cable messaging reducer digital silicon messaging.
+						-Please use professional Language when posting reiews
+						- Job Description and the Comment Section has to be at 
+						  lesat 140 characters
+						-Don't forget to rate the company!
+						-Make sure to fill in ALL FIELDS!  
 					</p>
 					<p>
-						Messaging disk, recursive coordinated pulse dithering controller or pc. Logarithmic potentiometer transmission high developer, boolean, gigabyte supporting system development backbone. Silicon debugged developer data cascading cable messaging reducer digital silicon messaging.
+					<h2>Ratings:</h2>
+						<p>
+						Overal Rating:
+						-How was your overall experience?
+						
+						Culture Rating:
+						-How was teh office environment?
+						
+						Experience Rating:
+						-Did you learn a lot at this CO-OP?
+						
+						Management Rating:
+						-How were the people that you worked with?
+						</p>
 					</p>
 				</div>
 
