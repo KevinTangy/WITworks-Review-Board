@@ -31,26 +31,26 @@
 				<div class="span4" style="padding-bottom: 20px;">
 					<h2>Posting Guidelines</h2>
 					<p>
-						-Please use professional Language when posting reiews
-						- Job Description and the Comment Section has to be at 
-						  lesat 140 characters
-						-Don't forget to rate the company!
-						-Make sure to fill in ALL FIELDS!  
+						-Please use professional Language when posting reiews <br>
+						-Job Description and the Comment Section has to be at 
+						  lesat 140 characters<br>
+						-Don't forget to rate the company!<br>
+						-Make sure to fill in ALL FIELDS!  <br>
 					</p>
 					<p>
 					<h2>Ratings:</h2>
 						<p>
-						Overal Rating:
-						-How was your overall experience?
+						Overal Rating:<br>
+						-How was your overall experience?<br><br>
 						
-						Culture Rating:
-						-How was teh office environment?
+						Culture Rating:<br>
+						-How was teh office environment?<br><br>
 						
-						Experience Rating:
-						-Did you learn a lot at this CO-OP?
+						Experience Rating:<br>
+						-Did you learn a lot at this CO-OP?<br><br>
 						
-						Management Rating:
-						-How were the people that you worked with?
+						Management Rating:<br>
+						-How were the people that you worked with?<br>
 						</p>
 					</p>
 				</div>
