@@ -20,7 +20,6 @@ $( function()
 				success: function( html )
 				{
 					parent.html( html );
-  
 				}
 			} );
 		}
@@ -34,9 +33,9 @@ $( function()
 				data: dataString,
 				cache: false,
 
-				success: function(html)
+				success: function( html )
 				{
-					parent.html(html);
+					parent.html( html );
 				}
    
 			} );
@@ -51,9 +50,9 @@ $( function()
 				data: dataString,
 				cache: false,
 
-				success: function(html)
+				success: function( html )
 				{
-					parent.html(html);
+					parent.html( html );
 				}
    
 			} );

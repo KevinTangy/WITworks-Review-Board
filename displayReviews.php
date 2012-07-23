@@ -24,7 +24,7 @@
 			echo '<div id="reviewpost"><div class="row">';
 			
 			$overall_rating = 
-				"<div class=\"span2\"><b>Overall Rating:</b> <div id=\"overall_stars_" . $counter . "\"></div>
+				"<div class=\"span3\" style=\"padding-bottom: 15px;\"><b>Overall Rating:</b> <div id=\"overall_stars_" . $counter . "\"></div>
 				<script type=\"text/javascript\">
 					$('#overall_stars_" . $counter . "').raty({
 						score:		" . $row[ 3 ] . ",
@@ -95,7 +95,7 @@
 			
 			echo "<br>" . $overall_rating . $culture_rating . $experience_rating . $management_rating . "</div>";
 			
-			echo "<div class=\"row\"><div class=\"span4\" style=\"padding-bottom: 15px;\"><b>Co-op Title:<br></b>" . $row[ 0 ] . "</div><div class=\"span4\" style=\"padding-bottom: 15px;\"><b>Co-op Course Number: </b><br>" . $row[ 8 ] . "</div></div>";
+			echo "<div class=\"row\"><div class=\"span5\" style=\"padding-bottom: 15px;\"><b>Co-op Title:<br></b>" . $row[ 0 ] . "</div><div class=\"span4\" style=\"padding-bottom: 15px;\"><b>Co-op Course Number: </b><br>" . $row[ 8 ] . "</div></div>";
 			
 			echo "<b>Job Description: </b><br>" . $row[ 1 ] . "<br><br><b>Comments: </b><br>" . $row[ 2 ] . "<br><br>";
 
@@ -105,19 +105,55 @@
 			$arr = mysql_fetch_array( mysql_query( "SELECT LIKES,DISLIKES FROM Reviews WHERE ReviewID ='" . $row[ 12 ]. "'" ) );
 			$l = $arr[ 'LIKES' ];
 			$d = $arr[ 'DISLIKES' ];
-			/*echo
-				'<div class="like"><a href="" class="vote" id="' . $row[ 12 ] . '" name="like"><img src="images/likeup_green.png"/>Like <b>' . $l . '</b></a></div>
-				<div class="dislike"><a href="" class="vote" id="' . $row[ 12 ] . '" name="dislike"><img src="images/likedown_red.png"/> <b>' . $d . '</b></a></div>
-				<div class="flag"><a href="" class="vote" id="' . $row[ 12 ] . '" name="flag"><img src="images/flag_red.png" alt="Flag review as inappropriate"/></a></div>';*/
 				
 			echo
 				'<div class="row" style="padding-top: 15px;">
 					<div class="btn-group span3">
-						<button href="#" class="vote btn btn-mini btn-success" id="' . $row[ 12 ] . '" name="like"><i class="icon-thumbs-up icon-white"></i> Like <b>' . $l . '</b></button>
-						<button href="#" class="vote btn btn-mini btn-danger" id="' . $row[ 12 ] . '" name="dislike"><i class="icon-thumbs-down icon-white"></i> <b>' . $d . '</b></button>
+						<button href="#" class="vote btn btn-mini btn-success" id="' . $row[ 12 ] . '" name="like" rel="tooltip" title="I like this"><i class="icon-thumbs-up icon-white"></i> Like <b>' . $l . '</b></button>
+						<button href="#" class="vote btn btn-mini btn-danger" id="' . $row[ 12 ] . '" name="dislike" rel="tooltip" title="I dislike this"><i class="icon-thumbs-down icon-white"></i> <b>' . $d . '</b></button>
 					</div>
 					<div style="float:right;">
-						<button href="#" class="vote btn btn-mini" id="' . $row[ 12 ] . '" name="flag"><i class="icon-flag"></i></button>
+						<button href="#" class="vote btn btn-mini" id="' . $row[ 12 ] . '" name="flag" rel="tooltip" title="Flag review as inappropriate"><i class="icon-flag"></i></button>
+					</div>
+				</div>';
+				
+			echo
+				'<div class="modal hide fade" id="likeModal">
+  					<div class="modal-header">
+  						<button type="button" class="close" data-dismiss="modal">×</button>
+    					<h3>Nope. Don\'t think so.</h3>
+  					</div>
+  					<div class="modal-body">
+    					<p>You\'ve already liked/disliked this review!</p>
+  					</div>
+  					<div class="modal-footer">
+    					<a href="#" class="btn" data-dismiss="modal">OK</a>
+					</div>
+				</div>';
+			echo
+				'<div class="modal hide fade" id="dislikeModal">
+  					<div class="modal-header">
+  						<button type="button" class="close" data-dismiss="modal">×</button>
+    					<h3>Nope. Don\'t think so.</h3>
+  					</div>
+  					<div class="modal-body">
+    					<p>You\'ve already liked/disliked this review!</p>
+  					</div>
+  					<div class="modal-footer">
+    					<a href="#" class="btn" data-dismiss="modal">OK</a>
+					</div>
+				</div>';
+			echo
+				'<div class="modal hide fade" id="flagModal">
+  					<div class="modal-header">
+  						<button type="button" class="close" data-dismiss="modal">×</button>
+    					<h3>Report review as inappropriate</h3>
+  					</div>
+  					<div class="modal-body">
+    					<p>Thank you for your input.  The review has been flagged.</p>
+  					</div>
+  					<div class="modal-footer">
+    					<a href="#" class="btn" data-dismiss="modal">OK</a>
 					</div>
 				</div>';
 			

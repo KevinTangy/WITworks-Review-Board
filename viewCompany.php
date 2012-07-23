@@ -36,12 +36,24 @@
 
 	<body>
 
-	<?php $thisPage = "viewCompany"; include( "nav.php" ); include( "js.php" ); echo '<script src="js/jquery.raty.min.js"></script><script src="js/likes.js"></script>'; ?>
+	<?php
+		$thisPage = "viewCompany";
+		include( "nav.php" );
+		include( "js.php" );
+		echo
+			'<script src="js/jquery.raty.min.js"></script>
+			<script src="js/likes.js"></script>
+			<script type="text/javascript">
+				$( document ).ready( function() {
+    				$( "[ rel=tooltip ]" ).tooltip( { \'placement\':\'bottom\' } );
+    			} );
+			</script>';
+	?>
 
 	<div class="wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="span4">
+				<div class="span3">
 					<?php
 						$companyID = $row[ 0 ];
 								
@@ -89,7 +101,7 @@
 					?>
 				</div>
 				
-				<div class="span8">
+				<div class="span9">
 					<?php include( "displayReviews.php" ); ?>
 				</div>
 			</div>

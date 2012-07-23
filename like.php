@@ -23,12 +23,21 @@
 		}
 		else
 		{
-			echo "<script> alert( 'You have already liked/disliked this review!'); </script>";
+			//echo "<script> alert( 'You have already liked/disliked this review!'); </script>";
+			$error = 
+				'<script type="text/javascript">
+					$( document ).ready( function() {
+    					$( "#likeModal" ).modal( "toggle" );
+    				} );
+					$( document ).ready( function() {
+    					$( "[ rel=tooltip ]" ).tooltip( "hide" );
+    				} );
+				</script>';
 		}
 
 		$result = mysql_query( "SELECT LIKES FROM Reviews WHERE ReviewID ='$id'" );
 		$row = mysql_fetch_array( $result );
 		$likes = $row[ 'LIKES' ];
-		echo '<i class="icon-thumbs-up icon-white"></i> Like <b>' . $likes . '</b>';
+		echo '<i class="icon-thumbs-up icon-white"></i> Like <b>' . $likes . '</b>' . $error;
 	}
 ?>
