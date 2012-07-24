@@ -157,7 +157,7 @@
 					</div>
 				</div>';
 			
-			echo '<br><br></div>';
+			echo '<br></div><hr>';
 			
 			$counter++;
 		}

@@ -59,6 +59,37 @@
 					</div>
 				</div>
 				<div class="span4">
+				<!-- page header, news/announcements -->
+					<div class="page-header">
+						<h2>Announcements</h2>
+					</div>
+						<h3>March 14, 2013</h3>
+							<p>WIT's Career Fair will be in Tansey Gym from 12 to 5 PM.  Be there or be squared!</p>
+						<h3>October 25, 2012</h3>
+							<p>Mock Interview Day will be in Watson Auditorium from 12 to 5 PM.  Be there or be squared!</p>	
+				</div>
+			</div>	
+			
+			
+			
+			
+			
+			<!-- Example row of columns -->
+			<div class="row">
+				<div class="span4">
+					<h2>Heading</h2>
+					<p>Floating-point partitioned, developer bridgeware prototype, connectivity adaptive phaselock proxy partitioned, deviation resistor high, audio. Logistically transistorized, floating-point solution bypass interface mainframe led generator converter. Pc transmission partitioned or, pulse echo. </p>
+					<p><a class="btn" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="span4">
+					<div class="page-header">
+						<h2>Most Recent Review</h2>
+					</div>
+					<?php include  'displayRecentReviews.php' ?>
+					
+				</div>
+				<!-- Twitter Page-->
+				<div class="span4">
 					<div class="page-header">
 						<h2>Career Services Twitter</h2>
 					</div>
@@ -73,13 +104,13 @@
 							height: 250,
 							theme: {
 							shell: {
-							background: '#333333',
-							color: '#cfb43b'
+							background: '#ffffff' , <!--old color: '#333333'-->
+							color: '#ff0202'  <!--old color: '#cfb43b'-->
 							},
 							tweets: {
-							background: '#000000',
-							color: '#ffffff',
-							links: '#cfb43b'
+							background: '#ffffff',
+							color: '#000000',
+							links: '#ff0202' <!--old color: '#cfb43b'-->
 							}
 							},
 							features: {
@@ -91,58 +122,12 @@
 							}).render().setUser('WITCareerServ').start();
 					</script>
 				</div>
-			</div>
-			
-			<hr>
-			
-			<!-- page header, news/announcements -->
-			<div class="page-header">
-				<h2>Announcements</h2>
-				<h3>March 14, 2013</h3>
-					<p>WIT's Career Fair will be in Tansey Gym from 12 to 5 PM.  Be there or be squared!</p>
-				<h3>October 25, 2012</h3>
-					<p>Mock Interview Day will be in Watson Auditorium from 12 to 5 PM.  Be there or be squared!</p>
-			</div>
-			
-			<!-- Example row of columns -->
-			<div class="row">
-				<div class="span4">
-					<h2>Heading</h2>
-					<p>Messaging disk, recursive coordinated pulse dithering controller or pc. Logarithmic potentiometer transmission high developer, boolean, gigabyte supporting system development backbone. Silicon debugged developer data cascading cable messaging reducer digital silicon messaging.</p>
-					<p><a class="btn" href="#">View details &raquo;</a></p>
-				</div>
-				<div class="span4">
-					<h2>Heading</h2>
-					<p>Floating-point partitioned, developer bridgeware prototype, connectivity adaptive phaselock proxy partitioned, deviation resistor high, audio. Logistically transistorized, floating-point solution bypass interface mainframe led generator converter. Pc transmission partitioned or, pulse echo. </p>
-					<p><a class="btn" href="#">View details &raquo;</a></p>
-				</div>
-				<div class="span4">
-					<h2>Heading</h2>
-					<p>Floating-point partitioned, developer bridgeware prototype, connectivity adaptive phaselock proxy partitioned, deviation resistor high, audio. Logistically transistorized, floating-point solution bypass interface mainframe led generator converter. Pc transmission partitioned or, pulse echo. </p>
-					<p><a class="btn" href="#">View details &raquo;</a></p>
 				</div>
 			</div>
 			
 			<hr>
 			
-			<!-- Example row of columns -->
-			<div class="row">
-				<div class="span4">
-					<h2>Heading</h2>
-					<p>Audio broadband debugged internet, read-only services, reducer, fragmentation developer. Device device, metafile extended element, audio integral kilohertz logarithmic. Harmonic metafile servicing generator record technician integer. Internet adaptive ethernet software encapsulated services reducer silicon port proxy. Logistically logarithmic, dithering interface transponder read-only deviation record.</p>
-					<p><a class="btn" href="#">View details &raquo;</a></p>
-				</div>
-				<div class="span4">
-					<h2>Heading</h2>
-					<p>Audio broadband debugged internet, read-only services, reducer, fragmentation developer. Device device, metafile extended element, audio integral kilohertz logarithmic. Harmonic metafile servicing generator record technician integer. Internet adaptive ethernet software encapsulated services reducer silicon port proxy. Logistically logarithmic, dithering interface transponder read-only deviation record.</p>
-					<p><a class="btn" href="#">View details &raquo;</a></p>
-				</div>
-				<div class="span4">
-					<h2>Heading</h2>
-					<p>Floating-point partitioned, developer bridgeware prototype, connectivity adaptive phaselock proxy partitioned, deviation resistor high, audio. Logistically transistorized, floating-point solution bypass interface mainframe led generator converter. Pc transmission partitioned or, pulse echo.</p>
-					<p><a class="btn" href="#">View details &raquo;</a></p>
-				</div>
-			</div>
+			
 	
 		</div> <!-- /container -->
 		<div class="push"></div>

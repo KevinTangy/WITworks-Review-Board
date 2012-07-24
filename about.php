@@ -38,7 +38,7 @@
 				<div class="span4 offset4">
 					<img src="img/kevin.png">
 					<h2>Kevin Tang</h2>
-					<p><strong>The leader.</strong> Kevin is the project manager of WITworks Review Board. His passion for coding and his programming language expertise makes him a great leader. In his spare time, Kevin likes to take pictures with Instagram and work full time at Wayfair.</p>
+					<p><strong>The one that keeps it together.</strong> Kevin is the project manager of WITworks Review Board. His passion for coding and his programming language expertise makes him a great leader. In his spare time, Kevin likes to take pictures with Instagram and work full time at Wayfair.</p>
 				</div>
 			</div>
 			
