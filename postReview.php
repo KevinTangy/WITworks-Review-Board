@@ -29,29 +29,23 @@
 
 			<div class="row">
 				<div class="span4" style="padding-bottom: 20px;">
-					<h2>Posting Guidelines</h2>
+					<h2>Posting Guidelines</h2><br>
 					<p>
-						-Please use professional Language when posting reiews <br>
-						-Job Description and the Comment Section has to be at 
-						  lesat 140 characters<br>
-						-Don't forget to rate the company!<br>
-						-Make sure to fill in ALL FIELDS!  <br>
+						<i class="icon-exclamation-sign"></i> Please use professional language when posting reviews <br>
+						<i class="icon-exclamation-sign"></i> Comment Sections has to be at least 140 characters<br>
+						<i class="icon-exclamation-sign"></i> Don't forget to rate the company<br>
+						<i class="icon-exclamation-sign"></i> Make sure to fill in ALL FIELDS<br>
 					</p>
-					<p>
-					<h2>Ratings:</h2>
+					<br>
+					<h2>Ratings Guidelines</h2><br>
 						<p>
-						Overal Rating:<br>
-						-How was your overall experience?<br><br>
+						<i class="icon-info-sign"></i> <b>Overall Rating:</b> How was your overall experience?<br>
 						
-						Culture Rating:<br>
-						-How was teh office environment?<br><br>
+						<i class="icon-info-sign"></i> <b>Culture Rating:</b> How was the office environment?<br>
 						
-						Experience Rating:<br>
-						-Did you learn a lot at this CO-OP?<br><br>
+						<i class="icon-info-sign"></i> <b>Experience Rating:</b> Did you learn a lot at this CO-OP?<br>
 						
-						Management Rating:<br>
-						-How were the people that you worked with?<br>
-						</p>
+						<i class="icon-info-sign"></i> <b>Management Rating:</b> How was your supervisor?<br>
 					</p>
 				</div>
 

@@ -24,6 +24,7 @@ html, body
 /* Space out sub-sections more */
 section { padding-top: 20px; }
 
+
 .push
 {
 	height: 60px;
@@ -39,6 +40,45 @@ footer
 }
 
 #reviewpost .row .span2 { padding-bottom: 15px; }
+
+/*splitters between the homepage content */
+.splitter {
+border-top: 1px solid #DDD;
+}
+
+/*sub headings in the homepage*/
+p.sub-heading, p.sub-heading {
+font-style: italic;
+color: #777;
+font-size: 15px;
+font-family: Georgia, serif;
+}
+
+/*logo in header */
+
+.navbar, .navbar-fixed-top .navbar-inner{
+	height: 50px;
+/*	border-bottom: 4px solid #CCC;*/
+/*	box-shadow: none;*/
+}
+.navbar .nav > li > a {
+	line-height: 29px;
+}
+#topbar_logo{
+	margin-top: -8px;
+}
+
+.navbar .brand {
+float: left;
+display: block;
+padding: 8px 20px 12px;
+margin-left: -20px;
+font-size: 20px;
+font-weight: 200;
+line-height: 1;
+color: white;
+}
+
 
 /* Search in navbar + plus search icon */
 .navbar-search

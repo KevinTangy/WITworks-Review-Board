@@ -42,7 +42,7 @@
 		$phptime = strtotime( $row[ 4 ] ) + 10800;
 		$time = date( 'g:i:s A', $phptime );
 		
-		echo "<br><b>Company Name:<br></b>" . $row[ 0 ] . "<br><br><b>Rating: </b>" . $star_rating . "<br><b> Coop Review: </b><br>" . $row[ 2 ] . "<br><br><br> - Class of  " . $row[ 6 ] . " " . $row[ 5 ] . "<br><font size=\"2\">Posted at " . $time . " on " . $date . "</font><br><br>";
+		echo "<b>Company Name: </b>" . $row[ 0 ] . "<br><br><b> Coop Review: </b><br>" . $row[ 2 ] . "<br><br> - Class of  " . $row[ 6 ] . " " . $row[ 5 ] . "<br><font size=\"2\">Posted at " . $time . " on " . $date . "</font><br><br>";
 		echo '</div>';
 		
 		$counter++;

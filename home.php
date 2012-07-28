@@ -23,9 +23,10 @@
 	<div class="wrapper">
 		<div class="container">
 			<!-- page header, welcome message -->
-			<div class="page-header">
+				<br>
 				<h1>Welcome, <?php echo $name[ 0 ]; ?>!</h1>
-			</div>
+				<br>
+				<img class="splitter" src="/img/grey_out.png">
 	
 			<div class="row">
 				<div class="span8">
@@ -36,21 +37,23 @@
 								<img src="img/01.jpg" alt="">
 								<div class="carousel-caption">
 									<h4>Top Employer - Kaspersky Lab USA</h4>
-									<p>Kaspersky Lab is one of the fastest growing IT security companies worldwide. Today, it is firmly positioned as one of the world's top four leading vendors of endpoint security software.</p>
+									<a href="http://usa.kaspersky.com/"><img src="img/01.jpg" alt=""></a>
+									<p>Kaspersky Lab is one of the fastest growing IT security companies worldwide.</p>
 								</div>
 							</div>
 							<div class="item">
-								<a href="http://www.wit.edu/features/2012/02/2012-02-16.html"><img src="img/02.jpg" alt=""></a>
+								<a href="http://wit.edu/career-services/prospective/"><img src="img/02.jpg" alt=""></a>
 								<div class="carousel-caption">
-									<h4>Phil Duffy, Computer Networking '12</h4>
-									<p>Junior Developer at Terrible Labs. Click on the picture to read more.</p>
+									<h4>Wentworth Institute of Technology</h4>
+									<p>Click to visit Wentworth's CO-OP site.</p>
 								</div>
 							</div>
 							<div class="item">
-								<img src="img/03.jpg" alt="">
+								<img src="img/02.jpg" alt="">
 								<div class="carousel-caption">
-									<h4>Third Thumbnail label</h4>
-									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<a href="http://wit.edu/career-services/prospective/"><img src="img/02.jpg" alt=""></a>
+									<h4>Wentworth Institute of Technology</h4>
+									<p>Click to visit Wentworth's CO-OP site.</p>
 								</div>
 							</div>
 						</div>
@@ -58,6 +61,7 @@
 						<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 					</div>
 				</div>
+				
 				<div class="span4">
 				<!-- page header, news/announcements -->
 					<div class="page-header">
@@ -68,7 +72,10 @@
 						<h3>October 25, 2012</h3>
 							<p>Mock Interview Day will be in Watson Auditorium from 12 to 5 PM.  Be there or be squared!</p>	
 				</div>
-			</div>	
+			</div>
+			<br>
+			<br>
+			<img class="splitter" src="/img/grey_out.png">
 			
 			
 			
@@ -77,22 +84,25 @@
 			<!-- Example row of columns -->
 			<div class="row">
 				<div class="span4">
-					<h2>Heading</h2>
-					<p>Floating-point partitioned, developer bridgeware prototype, connectivity adaptive phaselock proxy partitioned, deviation resistor high, audio. Logistically transistorized, floating-point solution bypass interface mainframe led generator converter. Pc transmission partitioned or, pulse echo. </p>
-					<p><a class="btn" href="#">View details &raquo;</a></p>
+					<center><img src="img/wrb.png" alt=""></center>
+					<h2>WRB</h2>
+					<p class="sub-heading">We're here to help you.</p>
+					<p>WITworks Review Board is a web application which is designed by students just for you! This application is a completely centralized location for all your co-op needs. It allows you to not only post reviews on your own experiences but will also give you a sense of what jobs are out there that you can potentially apply for.</p>
+					<p><a class="btn" href="about.php">Learn more &raquo;</a></p>
 				</div>
 				<div class="span4">
-					<div class="page-header">
-						<h2>Most Recent Review</h2>
-					</div>
-					<?php include  'displayRecentReviews.php' ?>
-					
+					<center><img src="img/bubbles.png" alt=""></center>
+					<h2>Most Recent Review</h2>
+					<p class="sub-heading">Just a sneak peek.</p>
+					<?php include  'displayRecentReviews.php' ?>		
 				</div>
 				<!-- Twitter Page-->
 				<div class="span4">
-					<div class="page-header">
+					<center><img src="img/twitter.png" alt=""></center>
+					
 						<h2>Career Services Twitter</h2>
-					</div>
+						<p class="sub-heading">Stay in the loop.</p>
+					
 					<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 					<script>
 						new TWTR.Widget({

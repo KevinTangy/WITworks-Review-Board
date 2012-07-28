@@ -71,7 +71,7 @@
 						//prints to screen LOGO, Company Name, Company URL, Company Description
 						if ( file_exists( $_SERVER{'DOCUMENT_ROOT'} . "/img/logos/" . $companyID . ".png" ) )
 						{
-							echo '<h2>'. $row[1] .'</h2><br><img src="/img/logos/' . $row[0] . '.png" width="100%" style="border:1px solid black"><br><br>';
+							echo '<br><h2>'. $row[1] .'</h2><br><img src="/img/logos/' . $row[0] . '.png" width="100%" style="border:1px solid black"><br><br>';
 						}
 						else
 						{
