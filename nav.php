@@ -7,7 +7,8 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="home.php"><img id="topbar_logo" src="/img/logofinal.png"></a>
+				
+				<a class="brand" href="home.php"><img id="topbar_logo" src="/img/wrblogo.png"></a>
 				
 				<div class="btn-group pull-right">
 					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">

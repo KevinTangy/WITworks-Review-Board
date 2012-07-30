@@ -148,7 +148,7 @@
 											$phptime = strtotime( $row[ 8 ] ) + 10800;
 											$time = date( 'g:i:s A', $phptime );
 											
-											echo "<br><br><b>Company: </b>". $row[ 0 ] ."<br><br><b>Co-op Title:<br></b>" . $row[ 4 ] . "<br><br><b> Job Description: </b><br>" . $row[ 5 ] . "<br><br><b>Comments: </b><br>" . $row[ 6 ] . "<br><br><br> Posted by: <b>" . $row[ 2 ] . " " . $row[ 1 ] . "</b>  (<a href='mailto:" . $row[9] . "'>" . $row[ 9 ] . "</a>) <br><font size=\"2\">Posted at " . $time . " on " . $date . "</font><br><br><br>";
+											echo "<hr><br><br><b>Company: </b>". $row[ 0 ] ."<br><br><b>Co-op Title:<br></b>" . $row[ 4 ] . "<br><br><b> Job Description: </b><br>" . $row[ 5 ] . "<br><br><b>Comments: </b><br>" . $row[ 6 ] . "<br><br><br> Posted by: <b>" . $row[ 2 ] . " " . $row[ 1 ] . "</b>  (<a href='mailto:" . $row[9] . "'>" . $row[ 9 ] . "</a>) <br><font size=\"2\">Posted at " . $time . " on " . $date . "</font><br><br><br>";
 											
 											// approve/delete controls
 											echo
