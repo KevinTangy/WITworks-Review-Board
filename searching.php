@@ -3,7 +3,7 @@
 			<div class="page-header">
 				<h2>Search for Co-op Companies</h2>
 			</div>
-			<form class="form-search" method="GET" action="">
+			<form class="form-search well" method="GET" action="">
 				<input type="text" class="input-large search-query" name="company">
 				<button type="submit" class="btn">Search</button>
 			</form>

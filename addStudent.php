@@ -22,15 +22,15 @@
 							  <li><a href="admin.php">Reports and Statistics</li>
 							  <li><a href="editCompany.php">Edit Company Information</a></li>
 							  <li class="active"><a href="addStudent.php">Add Students</a></li>
-							  <li><a href="monitorPosts">Monitor Posts</a></li>
+							  <li><a href="monitorPosts.php">Monitor Posts</a></li>
 							</ul>
 						</div><!--/.well -->
 					</div><!--/span-->
 			
 					<div class="span9">
-						<div class="hero-unit">
+						
 							
-							<h3>Student Entry Form</h3>
+							<div class="page-header"><h3>Student Entry Form</h3></div>
 							<br>
 								<!-- Entry Form for Student -->
 								<FORM action="addStudentDB.php" method="post" NAME="StudentEntry" id="StudentEntry">
@@ -92,7 +92,7 @@
 								 </FORM> 
 								<?php include( "import2.php" ); ?>
 						
-						</div><!--/herounit-->
+						
 					</div><!--/span9-->
 	
 			
@@ -104,3 +104,5 @@
 	<?php include( "js.php" ); ?>
 				
 	</body>
+
+</html>

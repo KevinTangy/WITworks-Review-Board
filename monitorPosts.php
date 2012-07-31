@@ -61,9 +61,9 @@
 					</div><!--/span-->
 			
 					<div class="span9">
-						<div class="hero-unit">
-							
-								<h3>Flagged Reviews</h3>
+						
+								
+								<div class="page-header"><h3>Flagged Reviews</h3></div>
 
 								<?php
 									// database connection settings
@@ -148,7 +148,7 @@
 											$phptime = strtotime( $row[ 8 ] ) + 10800;
 											$time = date( 'g:i:s A', $phptime );
 											
-											echo "<hr><br><br><b>Company: </b>". $row[ 0 ] ."<br><br><b>Co-op Title:<br></b>" . $row[ 4 ] . "<br><br><b> Job Description: </b><br>" . $row[ 5 ] . "<br><br><b>Comments: </b><br>" . $row[ 6 ] . "<br><br><br> Posted by: <b>" . $row[ 2 ] . " " . $row[ 1 ] . "</b>  (<a href='mailto:" . $row[9] . "'>" . $row[ 9 ] . "</a>) <br><font size=\"2\">Posted at " . $time . " on " . $date . "</font><br><br><br>";
+											echo "<br><b>Company: </b>". $row[ 0 ] ."<br><br><b>Co-op Title:<br></b>" . $row[ 4 ] . "<br><br><b> Job Description: </b><br>" . $row[ 5 ] . "<br><br><b>Comments: </b><br>" . $row[ 6 ] . "<br><br><br> Posted by: <b>" . $row[ 2 ] . " " . $row[ 1 ] . "</b>  (<a href='mailto:" . $row[9] . "'>" . $row[ 9 ] . "</a>) <br><font size=\"2\">Posted at " . $time . " on " . $date . "</font><br><br>";
 											
 											// approve/delete controls
 											echo
@@ -157,7 +157,7 @@
 												<input type="submit" name="aod" value="Delete Review ID ' . $row[ 10 ] . '">
 											</form>';
 									
-											echo '</div>';
+											echo '</div><hr>';
 											
 											$counter++;
 										}
@@ -168,7 +168,7 @@
 									}
 									?>
 						
-						</div><!--/herounit-->
+						
 					</div><!--/span9-->
 	
 			
@@ -180,3 +180,5 @@
 	<?php include( "js.php" ); ?>
 				
 	</body>
+
+</html>

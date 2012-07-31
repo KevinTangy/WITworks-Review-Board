@@ -34,12 +34,20 @@
 					<div id="myCarousel" class="carousel slide">
 						<div class="carousel-inner">
 							<div class="item active">
-								<img src="img/01.jpg" alt="">
+								<a href="http://www.wit.edu/features/profiles.html"><img src="img/03.png" alt=""></a>
 								<div class="carousel-caption">
-									<h4>Top Employer - Kaspersky Lab USA</h4>
-									<a href="http://usa.kaspersky.com/"><img src="img/01.jpg" alt=""></a>
-									<p>Kaspersky Lab is one of the fastest growing IT security companies worldwide.</p>
+									<h4>Co-op Student Profiles</h4>
+									<p>Click to read more co-op student profiles.</p>
 								</div>
+							</div>
+							<div class="item">
+								<a href="http://usa.kaspersky.com/"><img src="img/01.jpg" alt=""></a>
+								<div class="carousel-caption">
+									<h4>Kaspersky Lab</h4>
+									<p>Kaspersky Lab is one of the fastest growing IT security companies worldwide and is
+									one of the top CO-OP employers at Wentworth.</p>
+								</div>
+								
 							</div>
 							<div class="item">
 								<a href="http://wit.edu/career-services/prospective/"><img src="img/02.jpg" alt=""></a>
@@ -47,14 +55,7 @@
 									<h4>Wentworth Institute of Technology</h4>
 									<p>Click to visit Wentworth's CO-OP site.</p>
 								</div>
-							</div>
-							<div class="item">
-								<img src="img/02.jpg" alt="">
-								<div class="carousel-caption">
-								<a href="http://wit.edu/career-services/prospective/"><img src="img/02.jpg" alt=""></a>
-									<h4>Wentworth Institute of Technology</h4>
-									<p>Click to visit Wentworth's CO-OP site.</p>
-								</div>
+								
 							</div>
 						</div>
 						<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -67,9 +68,13 @@
 					<div class="page-header">
 						<h2>Announcements</h2>
 					</div>
+						<h3>August 2, 2012</h3>
+							<p>College of Engineering and Technology Second Annual Senior Design Showcase from 3:00-5:00pm at Watson Auditorium</p>
+						<h3>August 26, 2012</h3>
+							<p>Graduation Day at Bank of America Pavillion. <b>Congratulations to the Class of 2012!</b></p>
 						<h3>March 14, 2013</h3>
 							<p>WIT's Career Fair will be in Tansey Gym from 12 to 5 PM.  Be there or be squared!</p>
-						<h3>October 25, 2012</h3>
+						<h3>October 25, 2013</h3>
 							<p>Mock Interview Day will be in Watson Auditorium from 12 to 5 PM.  Be there or be squared!</p>	
 				</div>
 			</div>
@@ -111,7 +116,7 @@
 							rpp: 4,
 							interval: 30000,
 							width: 'auto',
-							height: 250,
+							height: 'auto',
 							theme: {
 							shell: {
 							background: '#ffffff' , <!--old color: '#333333'-->

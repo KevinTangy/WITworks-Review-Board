@@ -1,4 +1,4 @@
-<div class="row">		
+<div class="row"><br>		
 	<div class="span8">
 		<h2>Search results for companies matching "<?php echo $searchString; ?>"</h2>
 		

@@ -16,10 +16,11 @@
 		include( "nav.php" );
 		include( "js.php" );
 		echo
-			'<script src="js/jquery.validate.min.js"></script>
+			'<script src="js/jquery.validate.js"></script>
 			<script src="js/validateReviewForm.js"></script>
 			<script src="js/jquery.raty.min.js"></script>
-			<script src="js/jquery.textchange.js"></script>';
+			<script src="js/jquery.textchange.js"></script>
+			<script src="js/validateStars.js"></script>';
 	?>
 
 	<div class="wrapper">
@@ -29,7 +30,7 @@
 			</div>
 
 			<div class="row">
-				<div class="span4" style="padding-bottom: 20px;">
+				<div class="span4" style="padding-bottom: 20px;"><br>
 					<h2>Posting Guidelines</h2><br>
 						<p>
 							<i class="icon-exclamation-sign"></i> Please use professional language when posting reviews <br>
@@ -45,15 +46,16 @@
 							<i class="icon-info-sign"></i> <b>Experience Rating:</b> Did you learn a lot at this CO-OP?<br>
 							<i class="icon-info-sign"></i> <b>Management Rating:</b> How was your supervisor?<br>
 						</p>
+					<br>
 				</div>
 
 				<div class="span8">
-					<form class="form-horizontal" action="prInsert.php" method="post" name="reviewForm" id="reviewForm">
+					<form class="form-horizontal" action="prInsert.php" method="post" name="reviewForm" id="reviewForm" onsubmit="return validateStars();">
 						<fieldset>
 							<div class="control-group">
 								<label class="control-label" for="company_name">Company/Employer</label>
 								<div class="controls">
-									<select class="input-xxlarge" id="company_name" name="company_name">
+									<select class="input-xxlarge" id="company_name" name="company_name" title="Please select a company/employer">
 										<?php				
 											// database connection settings
 											include( 'config.php' );
@@ -87,17 +89,25 @@
 													echo '<option value="' . $row[0] . '">' . $row[0] . '</option>';
 												}
 									
-												echo '<option value="" disabled="disabled"></option>';
-												echo '<option value="OTHER_COMPANY">OTHER (Enter the name below)</option>';
+												//echo '<option value="" disabled="disabled"></option>';
+												//echo '<option value="OTHER_COMPANY">OTHER (Enter the name below)</option>';
 												echo '</select>
 													</div>
 												</div>';
-									
-												//echo '<BR id="break"><BR id="break">';
-												echo '<div class="control-group other_company">
-														<label class="control-label" for="other_company_name">OTHER</label>
+												
+												echo '<div class="control-group">
+														<label class="control-label" for="other_checkbox"></label>
 															<div class="controls">
-																<input type="text" class="input-xlarge" id="other_company_name" name="other_company_name" placeholder="">
+																<label class="checkbox">
+																	<input type="checkbox" id="other_checkbox" name="other_checkbox"> Company not listed above?
+																</label>
+															</div>
+														</div>';
+												
+												echo '<div class="control-group other_company_name">
+														<label class="control-label" for="other_company_name"></label>
+															<div class="controls">
+																<input type="text" class="input-xlarge" id="other_company_name" name="other_company_name" placeholder="" title="Please enter in a company/employer name">
 															</div>
 														</div>';
 												echo '<script type="text/javascript">
@@ -105,22 +115,25 @@
 														{
 															$( "#company_name" ).ready( function()
 															{
-																$( ".other_company" ).hide();
+																$( ".other_company_name" ).hide();
 															} );
-															$( "#company_name" ).change( function()
+															$( "#other_checkbox" ).change( function()
 															{
-																if ( $( "#company_name" ).val() != "OTHER_COMPANY" )
+																if ( $( "#other_checkbox" ).is( ":checked" ) )
 																{
-																	$( ".other_company" ).hide();
+																	$( ".other_company_name" ).show();
+																	$( "#company_name" ).attr( "disabled", true );
 																}
 																else
 																{
-																	$( ".other_company" ).show();
+																	$( ".other_company_name" ).hide();
+																	$( "#company_name" ).removeAttr( "disabled" );
 																}
 															} );
 															$( "#resetForm" ).click( function()
 															{
-																$( ".other_company" ).hide();
+																$( ".other_company_name" ).hide();
+																$( "#company_name" ).removeAttr( "disabled" );
 															} );
 														} );
 													</script>';
@@ -130,14 +143,14 @@
 		          			<div class="control-group">
 								<label class="control-label" for="title">Co-op Title</label>
 								<div class="controls">
-									<input type="text" class="input-large" id="title" placeholder="">
+									<input type="text" class="input-large" name="title" id="title" placeholder=""  title="Please enter in a co-op title">
 		           				</div>
 		            		</div>
 
 		            		<div class="control-group">
 		            			<label class="control-label" for="course_num">Co-op Course Number</label>
 		            			<div class="controls">
-									<select class="input-large" id="course_num">
+									<select class="input-large" name="course_num" id="course_num"  title="Please select a course number">
 										<option value="" disabled="disabled" selected>Select a course number below</option>
 										<option value="COOP300">COOP300</option>
 										<option value="COOP400">COOP400</option>
@@ -163,7 +176,7 @@
 									Tell us what you did.
 								</label>
 								<div class="controls">
-									<textarea class="input-xlarge" id="desc" rows="8" style="width: 100%;"></textarea>
+									<textarea class="input-xlarge" name="desc" id="desc" rows="8" style="width: 100%;"  title="Please tell us what you did!"></textarea>
 									<span id="charCurrent1" style="font-size: 16px; font-weight: bold; background: #EEE; display: inline-block; padding: 3px; margin: 0 0 12px; line-height: 1; color: #555;">0</span>
 									<i class="icon-question-sign" rel="tooltip" title="You must write at least 140 characters!"></i>
 								</div>
@@ -173,7 +186,7 @@
 									So, how was it?
 								</label>
 								<div class="controls">
-									<textarea class="input-xlarge" id="review" rows="8" style="width: 100%;"></textarea>
+									<textarea class="input-xlarge" name="review" id="review" rows="8" style="width: 100%;" title="Please tell us how it went!"></textarea>
 									<span id="charCurrent2" style="font-size: 16px; font-weight: bold; background: #EEE; display: inline-block; padding: 3px; margin: 0 0 12px; line-height: 1; color: #555;">0</span>
 									<i class="icon-question-sign" rel="tooltip" title="You must write at least 140 characters!"></i>
 								</div>
@@ -182,7 +195,7 @@
 							<div class="control-group">
 								<label class="control-label" for="oStars">Overall Rating</label>
 								<div class="controls">
-									<div class="stars" id="oStars"></div>
+									<div class="stars" name="oStars" id="oStars"></div>
 										<script type="text/javascript">
 											$('#oStars').raty({
 												cancel:		true,
@@ -200,7 +213,7 @@
 							<div class="control-group">
 								<label class="control-label" for="cStars">Culture Rating</label>
 								<div class="controls">
-									<div class="stars" id="cStars"></div>
+									<div class="stars" name="cStars" id="cStars"></div>
 										<script type="text/javascript">
 											$('#cStars').raty({
 												cancel:		true,
@@ -218,7 +231,7 @@
 							<div class="control-group">
 								<label class="control-label" for="eStars">Experience Rating</label>
 								<div class="controls">
-									<div class="stars" id="eStars"></div>
+									<div class="stars" name="eStars" id="eStars"></div>
 										<script type="text/javascript">
 											$('#eStars').raty({
 												cancel:		true,
@@ -236,7 +249,7 @@
 							<div class="control-group">
 								<label class="control-label" for="mStars">Management Rating</label>
 								<div class="controls">
-									<div class="stars" id="mStars"></div>
+									<div class="stars" name="mStars" id="mStars"></div>
 										<script type="text/javascript">
 											$('#mStars').raty({
 												cancel:		true,
@@ -251,11 +264,27 @@
 								</div>
 							</div>
 
+							<?php
+								echo
+									'<div class="modal hide fade" id="starsModal">
+					  					<div class="modal-header">
+					  						<button type="button" class="close" data-dismiss="modal">×</button>
+					    					<h3>Don\'t forget!</h3>
+					  					</div>
+					  					<div class="modal-body">
+					    					<p>Please select a rating!</p>
+					  					</div>
+					  					<div class="modal-footer">
+					    					<a href="#" class="btn" data-dismiss="modal">OK</a>
+										</div>
+									</div>';
+							?>
+
 							<br>
 
 							<div class="form-actions">
-		            			<button type="submit" class="btn btn-primary" disabled>Post!</button>
-		            			<input type="button" class="btn btn-info" onclick="this.form.reset(); $( '.stars' ).raty( 'cancel' ); $( '#charCurrent1' ).html( parseInt( 0 ) ); $( '#charCurrent2' ).html( parseInt( 0 ) );" id="resetForm" value="Reset form">
+		            			<button type="submit" class="btn btn-primary" data-loading-text="Posting...">Post!</button>
+		            			<input type="button" class="btn btn-info" onclick="this.form.reset(); $( '.stars' ).raty( 'cancel' ); $( '#charCurrent1' ).html( parseInt( 0 ) ); $( '#charCurrent2' ).html( parseInt( 0 ) ); $( 'label' ).remove( '.success' ).remove( '.error' ); $( 'label' ).closest( '.control-group' ).removeClass( 'success' ).removeClass( 'error' );" id="resetForm" value="Reset form">
 							</div>
 						</fieldset>
 					</form>

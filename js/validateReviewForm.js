@@ -3,19 +3,18 @@ $( document ).ready( function()
 	$( '#reviewForm' ).validate(
 	{
 		rules: {
-			company_name:
+			company_name: "required",
+			other_company_name: 
 			{
-				required: true
+				minlength: 2,
+				required: "#other_checkbox:checked"
 			},
 			title:
 			{
 				minlength: 3,
 				required: true
 			},
-			course_num:
-			{
-				required: true
-			},
+			course_num: "required",
 			desc:
 			{
 				minlength: 140,
@@ -27,15 +26,33 @@ $( document ).ready( function()
 				required: true
 			}
 		},
+		messages:
+		{
+			
+		},
 		highlight: function( label )
 		{
-			$( label ).closest( '.control-group' ).addClass( 'error' );
+			$( label ).closest( '.control-group' ).removeClass( 'success' ).addClass( 'error' );
+			//$( label ).closest( '.control-group' ).addClass( 'error' );
 		},
 		success: function( label )
 		{
 			label
 				.text( 'OK!' ).addClass( 'valid' )
-				.closest( '.control-group' ).addClass( 'success' );
+				.closest( '.control-group' ).removeClass( 'error' ).addClass( 'success' );
+				//.closest( '.control-group' ).addClass( 'success' );
+		},
+		onfocusout: function( label )
+		{
+			if( $( label ).val() == "" )
+			{
+				$( label ).closest( '.control-group' ).removeClass( 'success' );
+			}
 		}
+	} );
+
+	$( "#other_checkbox" ).click( function()
+	{
+		$( "#other_company_name" ).valid();
 	} );
 } );

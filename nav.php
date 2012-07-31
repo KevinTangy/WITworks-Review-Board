@@ -2,15 +2,15 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" style="padding-top: 12px;">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
 				
-				<a class="brand" href="home.php"><img id="topbar_logo" src="/img/wrblogo.png"></a>
+				<a class="brand" href="home.php" style="padding: 15px 15px 10px;"><img id="topbar_logo" src="/img/wrblogo.png"></a>
 				
-				<div class="btn-group pull-right">
+				<div class="btn-group pull-right" style="margin-top: 5px;">
 					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 						<i class="icon-user"></i>
 						<?php

@@ -6,7 +6,7 @@ WITworks Review Board is a web application which is designed by students for you
 
 ## Requirements
 
-* Modern web browser, such as Firefox 3.0+, Safari 4.0+, Chrome 7+, IE9+, Opera 9+
+* Modern web browser with standards and javascript support, such as Firefox 3.0+, Safari 4.0+, Chrome 7+, IE9+, Opera 9+
 
 
 ### The web app is currently in production at: [http://WITworksReviewBoard.com](http://WITworksReviewBoard.com)

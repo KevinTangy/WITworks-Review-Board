@@ -15,7 +15,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="span12">
-					<h2>Disclaimer</h2><br>
+					<div class="page-header"><h2>Disclaimer</h2></div><br>
 					<div class="controls">
 						<textarea class="input-xxlarge" id="disclaimer" rows="5">All reviews posted are based on personal experiences. They do not reflect the views of the respective company or of Wentworth Institute of Technology.  All posts are monitored and will be removed if found to be unprofessional.</textarea><br>
 					</div>

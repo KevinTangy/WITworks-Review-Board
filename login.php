@@ -1,4 +1,3 @@
-
 <?php
 	// initialize session
 	session_start();
@@ -33,7 +32,7 @@
 	<div class="wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="span5" style="padding-bottom:20px;">
+				<div class="span12" style="padding-bottom:20px;">
 					<form id="login-form" method="POST" action="">
 						<fieldset>
 						<div class="page-header"><h2>User Login</h2></div>
@@ -50,14 +49,11 @@
 							</div>
 							<button class="btn btn-success" type="submit">Sign in</button>
 							<button class="btn btn-info" type="reset">Reset fields</button>
-							<span class="help-block"><a href="iforgot.php">forgot your password?</a></span>
+							<p class="help-block"><a href="iforgot.php">forgot your password?</a></p>
 						</fieldset>
 					</form>
 				</div>
-				<div class="span6">
-					<div class="page-header"><h2>What is WRB?</h2></div>
-					<p>WITworks Review Board is a web application which is designed by students for you, the students. The idea behind it is to a have completely centralized location for all your co-op needs. The application allows you to not only post reviews on your own experiences; but also if you are a newer student looking for co-ops or an upper classman looking for a potential job, it can give you a sense of what jobs are out that you can potentially apply for. As long as you are a registered student at Wentworth Institute of Technology, you will be able to access this site.</p>
-				</div>
+				
 			</div>
 		</div> <!-- /container -->
 		<div class="push"></div>

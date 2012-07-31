@@ -23,8 +23,8 @@
 		}
 		else
 		{
-			// invalid login, redirect back to login page;
-			$error = '<div class="row"><div class="span4" style="text-align:center"><div class="alert alert-error"><a class="close" data-dismiss="alert" href="#">&times;</a>Incorrect credentials! Please try again~</div></div></div>';
+			// invalid login
+			$error = '<div class="row"><div class="span12" style="text-align:center"><div class="alert alert-error"><a class="close" data-dismiss="alert" href="#">&times;</a>Incorrect credentials! Please try again~</div></div></div>';
 		}
 	}
 ?>

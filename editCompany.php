@@ -30,9 +30,8 @@
 					</div><!--/span-->
 			
 					<div class="span9">
-						<div class="hero-unit">
 							
-							<h3>Edit Company Form</h3>
+							<div class="page-header"><h3>Edit Company Form</h3></div>
 							* Be careful with this form! Select the company you want to edit and change ONLY the fields you want to update. 
 							<br><br>
 
@@ -131,7 +130,7 @@
 									<input type="submit" value="Submit">
 							</FORM>
 						
-						</div><!--/herounit-->
+						
 					</div><!--/span9-->
 	
 			
@@ -143,3 +142,5 @@
 	<?php include( "js.php" ); ?>
 				
 	</body>
+
+</html>

@@ -53,24 +53,19 @@ font-size: 15px;
 font-family: Georgia, serif;
 }
 
-/*logo in header */
 
+/*logo in header */
 .navbar .brand {
 float: left;
 display: block;
-padding: 15px 15px 10px;
-margin-left: -20px;
+/*padding: 15px 15px 10px;*/
+margin-left: -15px;
 font-size: 20px;
-font-weight: 200;
-line-height: 1;
 color: white;
 }
-
-
 .navbar .nav > li > a {
 	line-height: 29px;
 }
-
 #topbar_logo{
 	margin-top: -8px;
 }
@@ -90,9 +85,9 @@ color: white;
 .navbar-search .icon-search
 {
     position: absolute;
-    top: 7px;
-    left: 11px;
-    background-image: url( "http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings-white.png" );
+    top: 11px;
+    left: 16px;
+    background-image: url( "/img/glyphicons-halflings-white.png" );
 }
 
 .navbar-search .search-query:focus, .navbar-search .search-query.focused
@@ -104,6 +99,24 @@ color: white;
 {
     background-image: url( "/img/glyphicons-halflings.png" );
 }
+
+
+/* ADMIN PAGE - Makes font red and 56px*/
+.admin
+{
+	color:#cf333d;
+	font-size:56px;
+	padding:15px 5px;
+}
+
+/* ABOUT US - Makes Names in About Us Red*/
+.make-red
+{
+color:#cf333d;
+}
+
+
+
 
 /* Post page validation styles */
 label.valid
@@ -133,8 +146,14 @@ label.error
 {	
 	.wrapper .container { padding-top: 0; }
 	footer { position: static; }
-	.navbar-search .icon-search { top: 16px; left: 25px; }
 	.navbar .brand { padding-left: 10px; margin-left: 0px; }
+	.navbar-search .icon-search { top: 15px; left: 25px; }
+}
+
+@media (min-width: 980px)
+{	
+	.navbar-search .icon-search { top: 10px; left: 16px; }
+	.navbar-search { padding-top: 4px; padding-left: 5px; }
 }
 
 @media (min-width: 1200px) { }

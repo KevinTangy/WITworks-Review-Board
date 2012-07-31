@@ -37,7 +37,7 @@
 			<div class="row">
 				<div class="span4 offset4">
 					<img src="img/kevin.png">
-					<h2>Kevin Tang</h2>
+					<div class="make-red"><h2>Kevin Tang</h2></div>
 					<p><strong>The one that keeps it together.</strong> Kevin is the project manager of WITworks Review Board. His passion for coding and his programming language expertise makes him a great leader. In his spare time, Kevin likes to take pictures with Instagram and work full time at Wayfair.</p>
 				</div>
 			</div>
@@ -45,12 +45,12 @@
 			<div class="row vertical-spacing">
 				<div class="span4 offset2">
 					<img src="img/juwelene.png">
-					<h2>Juwelene Parro</h2>
+					<div class="make-red"><h2>Juwelene Parro</h2></div>
 					<p><strong>The girl in charge.</strong> Being the only girl in the group, Juwelene concentrates on website design and database management. Researching different website layouts and design is on her daily schedule to further improve WITworks Review Board. She loves writing SQL queries as much as she loves shopping on Newbury Street. </p>
 				</div>
 				<div class="span4">
 					<img src="img/ian.png">
-					<h2>Ian Duncan</h2>
+					<div class="make-red"><h2>Ian Duncan</h2></div>
 					<p><strong>The smooth talker.</strong> Ian oversees all the documentation and presentation aspect of the project. No one can sell this website to someone better than Ian. He can whip up a presentation like no other. He has a way with words which is probably why his girlfriend of 4 and a half years, Krystal, is still with him. </p>
 				</div>
 			</div>
@@ -58,7 +58,7 @@
 			<div class="row">
 				<div class="span4 offset4">
 					<img src="img/dan.png">
-					<h2>Dan Collins</h2>
+					<div class="make-red"><h2>Dan Collins</h2></div>
 					<p><strong>The one that got away.</strong> Dan played a big role in the early stages of WITworks Review Board. For his senior project he decided to join a different team but we want to acknowledge all his contribution and wanted him to know that we miss him dearly!</p>
 				</div>
 			</div>

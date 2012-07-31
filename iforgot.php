@@ -31,31 +31,77 @@
 
 	<div class="wrapper">
 		<div class="container">
-			<center>
-			<br>
-			<h3>forgot password?  (NOT WORKING)</h3>
-			<?php // directions or success/error message
-				if ( $message != NULL )
-					echo "<h4>" . $message . "<h4>";
-				else
-					echo "<h4>Enter your email to get a randomly generated password.<h4>";
-			?>
-			<br>
-			<form name="resetPass" id="resetPass" method="POST">
-				<table border="0">
-					<tr><td>Email:</td><td><input class="validate[required,custom[email]]" type="text" name="email" id="email" size="20"></td></tr>
-					<tr><td>&nbsp;</td><td><input type="submit" value="Submit" disabled></td></tr>
-				</table>
-			</form>
-			<br>
-			<center>
+			<div class="row">
+				<div class="span12" style="padding-bottom:20px;">
+					<form id="reset-form" method="POST" action="">
+						<fieldset>
+						<div class="page-header"><h2>forgot password?</h2></div>
+							<?php
+								if ( $message != null )
+									echo '<div class="row"><div class="span12" style="text-align:center"><div class="alert alert-error"><a class="close" data-dismiss="alert" href="#">&times;</a>' . $message . '</div></div></div>';
+								else
+									echo "<h4>Enter your email to get a randomly generated password.<h4><br>";
+							?>
+							<div class="control-group">
+								<div class="controls">
+									<input type="email" name="email" placeholder="Email Address">
+								</div>
+							</div>
+							<button class="btn btn-info" type="submit">Submit</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
 		</div> <!-- /container -->
 		<div class="push"></div>
 	</div> <!-- /wrapper -->
 	
 	<?php include( "footer.php" ); ?>
-
 	<?php include( "js.php" ); ?>
+	<script src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('input').hover(function()
+			{
+				$(this).popover('show')
+			} );
+			
+			$("#reset-form").validate(
+			{
+				rules:
+				{
+					email:
+					{
+						required: true,
+						email: true
+					}
+				},
+				messages:
+				{
+					email:
+					{
+						required: "We need your email address to reset your password",
+						email: "Your email address must be in the format of name@domain.com"
+					}
+				},
+			
+				errorClass: "help-block",
+				errorElement: "span",
+
+				highlight: function(element, errorClass, validClass)
+				{
+					$(element).parents('.control-group').removeClass('success');
+					$(element).parents('.control-group').addClass('error');
+				},
+				unhighlight: function(element, errorClass, validClass)
+				{
+					$(element).parents('.control-group').removeClass('error');
+					$(element).parents('.control-group').addClass('success');
+				}
+			} );
+		} );
+	</script>
 
 	</body>
 
