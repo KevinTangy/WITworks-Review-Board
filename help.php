@@ -151,7 +151,7 @@
 							</div>
 						</div>
 						<button class="btn btn-success" type="submit">Send message</button>
-						<button class="btn btn-info" type="reset">Reset fields</button>
+						<input type="button" class="btn btn-info" onclick="this.form.reset(); $( 'span' ).remove( '.help-inline' ); $( '.control-group' ).removeClass( 'success' ).removeClass( 'error' );" id="resetForm" value="Reset form">
 					</fieldset>
 				</form>
 			</section>	

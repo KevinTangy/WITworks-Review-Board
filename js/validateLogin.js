@@ -8,8 +8,13 @@ $(document).ready(function()
 	$("#login-form").validate(
 	{
 		rules:{
-			username:"required",
-			password:{
+			username:
+			{
+				required: true,
+				minlength: 2
+			},
+			password:
+			{
 				required: true,
 				minlength: 8
 			}

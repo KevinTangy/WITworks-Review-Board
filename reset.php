@@ -26,7 +26,7 @@
 			$website = $_SERVER[ "HTTP_HOST" ];
 			
 			// this is the body of the email sent to the user who is resetting their PW	
-			$emailBody = date( 'F j, Y', strtotime( "now" ) + 10800 ) . "\n\nDear " . $nameRow[ 0 ] . " " . $nameRow[ 1 ] . ":\n\nYour password has been reset.  Your new password is: " . $newPw . "\n\nLogin at the site below:\nhttp://" . $website . ""; 
+			$emailBody = date( 'F j, Y', strtotime( "now" ) ) . "\n\nDear " . $nameRow[ 0 ] . " " . $nameRow[ 1 ] . ":\n\nYour password has been reset.  Your new password is: " . $newPw . "\n\nLogin at the site below:\nhttp://" . $website . ""; 
 				
 			$newPw = hash( 'sha512', $newPw ); //hash the password with SHA512
 			
@@ -39,23 +39,29 @@
 				if ( mail( $emailAddress, 'Password Reset', $emailBody, 'From: WITworks Review Board <noreply@WITworksReviewBoard.com>' ) )
 				{ 
 					// successfully sent email
+					$alert = "success";
 					$message .= "<br>An email has been sent with your new password.<br>Please click the header above to go back to the login page.";
 				}
 				else 
 				{
 					// something broke, email delivery failed
+					$alert = "error";
 					$message .= "<br>...but email delivery failed. Please contact an administrator for assistance.";
 				}
 			}
 			else
 			{
+				$alert = "error";
 				$message = "Password was not reset for user " . $UserName . ". Please contact an administrator for assistance.";
 			}
 		}
 		else
 		{
+			$alert = "error";
 			$message = "No user was found with the email address you entered.";
 		}
+
+		$foo = '<div class="row"><div class="span12" style="text-align:center"><div class="alert alert-' . $alert . '"><a class="close" data-dismiss="alert" href="#">&times;</a>' . $message . '</div></div></div>';
 	
 		// close mysql database connection 
 		mysql_close( mysql_connect( $hostname, $username, $password ) );

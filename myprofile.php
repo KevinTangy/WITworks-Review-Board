@@ -11,26 +11,25 @@
 	
 	<body>
 
-	<?php $thisPage = "about"; include( "nav.php" ); ?>
+	<?php $thisPage = "myprofile"; include( "nav.php" ); ?>
 
 	<div class="wrapper">
 		<div class="container">
 			<br>
 			<div class="row-fluid">
-				<div class="span4">
-					 <div class="well sidebar-nav">
-						<ul class="nav nav-list">
+				<div class="span3">
+					<div class="well sidebar-nav">
+						<ul class="nav nav-pills nav-stacked">
 						  <li class="nav-header">My Profile</li>
-						  <li class="active"><a href="myProfile.php">Personal Information</a></li>
+						  <li class="active"><a href="myProfile.php">My Info</a></li>
 						  <li><a href="changePassword.php">Change Password</a></li>
 						  <li><a href="myReviews.php">My Reviews</a></li>
-						  <li><a href="#">Inbox</a></li>
 						</ul>
 					</div><!--/.well -->
 				</div><!--/span-->
 			
-				<div class="span8">
-					<div class="well">
+				<div class="span9">
+					<div class="hero-unit">
 						<?php
 							include( "config.php" );
 				
@@ -80,7 +79,6 @@
 	</div><!--/wrapper-->
 
 	<?php include( "footer.php" ); ?>
-	
 	<?php include( "js.php" ); ?>
 	
 	</body>

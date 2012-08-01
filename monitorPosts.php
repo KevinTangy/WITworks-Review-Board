@@ -1,7 +1,14 @@
 <?php
+	// initialize session
+	session_start();
+
 	include( "checkSession.php" );
+
 	if ( !( include( "checkAdmin.php" ) ) )
 		header( "Location: home.php" );
+
+	// database connection settings
+	include( 'config.php' );
 		
 	
 	if ( $_SERVER[ "REQUEST_METHOD" ] == "POST" )
@@ -35,9 +42,9 @@
 		
 		header( "refresh:5;url=monitorPosts.php" );
 	}
-?>
 
-	<?php include( "header.php" ); ?>
+	include( "header.php" );
+?>
 	
 	
 	<body>
@@ -46,13 +53,14 @@
 
 	<div class="wrapper">
 		<div class="container">
+			<br>
 			<div class="row-fluid">
 					
 					<div class="span3">
 						 <div class="well sidebar-nav">
-							<ul class="nav nav-list">
-							  <li class="nav-header">Administrator Dashboard</li>
-							  <li><a href="admin.php">Reports and Statistics</li>
+							<ul class="nav nav-pills nav-stacked">
+							  <li class="nav-header">Admin Dashboard</li>
+							  <li><a href="admin.php">Reports and Statistics</a></li>
 							  <li><a href="editCompany.php">Edit Company Information</a></li>
 							  <li><a href="addStudent.php">Add Students</a></li>
 							  <li class="active"><a href="monitorPosts">Monitor Posts</a></li>
@@ -174,6 +182,7 @@
 			
 			</div><!--/rowfluid-->			
 		</div><!--/-container-->
+		<div class="push"></div>
 	</div><!--/wrapper-->
 	
 	<?php include( "footer.php" ); ?>

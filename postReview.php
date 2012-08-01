@@ -16,7 +16,7 @@
 		include( "nav.php" );
 		include( "js.php" );
 		echo
-			'<script src="js/jquery.validate.js"></script>
+			'<script src="js/jquery.validate.min.js"></script>
 			<script src="js/validateReviewForm.js"></script>
 			<script src="js/jquery.raty.min.js"></script>
 			<script src="js/jquery.textchange.js"></script>
@@ -30,7 +30,7 @@
 			</div>
 
 			<div class="row">
-				<div class="span4" style="padding-bottom: 20px;"><br>
+				<div class="span4" style="padding-bottom: 20px;">
 					<h2>Posting Guidelines</h2><br>
 						<p>
 							<i class="icon-exclamation-sign"></i> Please use professional language when posting reviews <br>
@@ -223,6 +223,7 @@
 												starOff:	'star-off-big.png',
 												starOn:		'star-on-big.png',
 												width:		168,
+												scoreName:	'cScore'
 											});
 										</script>
 								</div>
@@ -241,6 +242,7 @@
 												starOff:	'star-off-big.png',
 												starOn:		'star-on-big.png',
 												width:		168,
+												scoreName:	'eScore'
 											});
 										</script>
 								</div>
@@ -259,6 +261,7 @@
 												starOff:	'star-off-big.png',
 												starOn:		'star-on-big.png',
 												width:		168,
+												scoreName:	'mScore'
 											});
 										</script>
 								</div>

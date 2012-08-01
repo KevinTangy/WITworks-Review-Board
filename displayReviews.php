@@ -88,9 +88,9 @@
 				</script>
 				</div>";					
 			
-			$phpdate = strtotime( $row[ 4 ] ) + 10800;
+			$phpdate = strtotime( $row[ 4 ] );
 			$date = date( 'F j, Y', $phpdate );
-			$phptime = strtotime( $row[ 5 ] ) + 10800;
+			$phptime = strtotime( $row[ 5 ] );
 			$time = date( 'g:i:s A', $phptime );
 			
 			echo "<br>" . $overall_rating . $culture_rating . $experience_rating . $management_rating . "</div>";
@@ -113,6 +113,7 @@
 						<button href="#" class="vote btn btn-mini btn-danger" id="' . $row[ 12 ] . '" name="dislike" rel="tooltip" title="I dislike this"><i class="icon-thumbs-down icon-white"></i> <b>' . $d . '</b></button>
 					</div>
 					<div style="float:right;">
+						<button href="#" class="btn btn-mini btn-info" id="contact" name="contact" rel="tooltip" title="Contact reviewer"><i class="icon-envelope icon-white"></i></button>
 						<button href="#" class="vote btn btn-mini" id="' . $row[ 12 ] . '" name="flag" rel="tooltip" title="Flag review as inappropriate"><i class="icon-flag"></i></button>
 					</div>
 				</div>';

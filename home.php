@@ -17,8 +17,9 @@
 	
 	
 	<body>
-
-	<?php $thisPage = "home"; include( "nav.php" ); ?>
+	
+	<?php $thisPage = "home"; include( "js.php" ); include( "nav.php" ); ?>
+	<script src="js/jquery.raty.min.js"></script>
 
 	<div class="wrapper">
 		<div class="container">
@@ -65,7 +66,7 @@
 				
 				<div class="span4">
 				<!-- page header, news/announcements -->
-					<div class="page-header">
+					<div class="page-header" style="margin:0px 0 5px;">
 						<h2>Announcements</h2>
 					</div>
 						<h3>August 2, 2012</h3>
@@ -81,10 +82,7 @@
 			<br>
 			<br>
 			<img class="splitter" src="/img/grey_out.png">
-			
-			
-			
-			
+
 			
 			<!-- Example row of columns -->
 			<div class="row">
@@ -149,8 +147,6 @@
 	</div> <!-- /wrapper -->
 	
 	<?php include( "footer.php" ); ?>
-
-	<?php include( "js.php" ); ?>
 
 	</body>
 

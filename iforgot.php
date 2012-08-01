@@ -37,8 +37,8 @@
 						<fieldset>
 						<div class="page-header"><h2>forgot password?</h2></div>
 							<?php
-								if ( $message != null )
-									echo '<div class="row"><div class="span12" style="text-align:center"><div class="alert alert-error"><a class="close" data-dismiss="alert" href="#">&times;</a>' . $message . '</div></div></div>';
+								if ( $foo != null )
+									echo $foo;
 								else
 									echo "<h4>Enter your email to get a randomly generated password.<h4><br>";
 							?>

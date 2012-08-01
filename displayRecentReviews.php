@@ -1,4 +1,3 @@
-
 <?php
 	// initialize session
 	session_start();
@@ -23,10 +22,10 @@
 				"<div id=\"review_stars_" . $counter . "\"></div>
 				<script type=\"text/javascript\">
 					$('#review_stars_" . $counter . "').raty({
-						start:		" . $row[ 1 ] . ",
+						score:		" . $row[ 1 ] . ",
 						readOnly:	true,
 						cancel:		false,
-						path:		'images/',
+						path:		'img/raty/',
 						cancelOff:	'cancel-off-big.png',
 						cancelOn:	'cancel-on-big.png',
 						starOff:	'star-off-big.png',
@@ -35,14 +34,15 @@
 					});
 				</script>";
 				
-		echo '<div id="recentreviewpost" onclick="location.href=\'viewCompany.php?company=' . urlencode( $row[ 0 ] ) . '\';" style="cursor: pointer">';
+		echo '<div id="recentreviewpost">';
 		
-		$phpdate = strtotime( $row[ 3 ] ) + 10800;
+		$phpdate = strtotime( $row[ 3 ] );
 		$date = date( 'F j, Y', $phpdate );
-		$phptime = strtotime( $row[ 4 ] ) + 10800;
+		$phptime = strtotime( $row[ 4 ] );
 		$time = date( 'g:i:s A', $phptime );
 		
-		echo "<b>Company Name: </b>" . $row[ 0 ] . "<br><br><b> Coop Review: </b><br>" . $row[ 2 ] . "<br><br> - Class of  " . $row[ 6 ] . " " . $row[ 5 ] . "<br><font size=\"2\">Posted at " . $time . " on " . $date . "</font><br><br>";
+		echo "<b>Company Name: </b>" . $row[ 0 ] . "<br><br>" . $star_rating . "<br><b>Coop Review: </b><br>" . $row[ 2 ] . "<br><br> - Class of  " . $row[ 6 ] . " " . $row[ 5 ] . "<br><font size=\"2\">Posted at " . $time . " on " . $date . "</font><br><br>";
+		echo '<a class="btn" href="viewCompany.php?company=' . urlencode( $row[ 0 ] ) . '">Read more »</a>';
 		echo '</div>';
 		
 		$counter++;

@@ -4,26 +4,26 @@
 	
 	// if user is not logged in and has accepted disclaimer, redirect to login page, else if disclaimer has not been accepted, redirect to splash
 	include( "checkSession.php" );
+	
+	include( "header.php" );
 ?>
-
-	<?php include( "header.php" ); ?>
 	
 	
 	<body>
 
-	<?php $thisPage = "about"; include( "nav.php" ); ?>
+	<?php $thisPage = "myreviews"; include( "nav.php" ); ?>
 
 	<div class="wrapper">
 		<div class="container">
+			<br>
 			<div class="row-fluid">
 				<div class="span3">
 					 <div class="well sidebar-nav">
-						<ul class="nav nav-list">
+						<ul class="nav nav-pills nav-stacked">
 						  <li class="nav-header">My Profile</li>
-						  <li><a href="myProfile.php">Personal Information</a></li>
+						  <li><a href="myProfile.php">My Info</a></li>
 						  <li><a href="changePassword.php">Change Password</a></li>
 						  <li class="active"><a href="myReviews.php">My Reviews</a></li>
-						  <li><a href="#">Inbox</a></li>
 						</ul>
 					</div><!--/.well -->
 				</div><!--/span-->
@@ -84,9 +84,13 @@
 	
 			</div><!--/row-->
 		</div><!--/.fluid-container-->
+		<div class="push"></div>
 	</div><!--/wrapper-->
 
 	<?php include( "footer.php" ); ?>
 	<?php include( "js.php" ); ?>
 			
 	</body>
+
+
+</html>
