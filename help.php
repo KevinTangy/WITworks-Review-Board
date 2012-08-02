@@ -21,7 +21,7 @@
 			</div>
 	
 			<div class="accordion" id="accordion2">
-				<div class="accordion-group">
+			<!--	<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
 							What is WITworks Review Board?
@@ -30,31 +30,31 @@
 					<div id="collapseOne" class="accordion-body collapse">
 						<div class="accordion-inner">
 							WITworks Review Board (WRB) is a CO-OP review site where students can post and read reviews about their own and fellow students experiences in the field. This site allows new students to get an idea of what is out there and what students thought of it. 
+						</div> 
+					</div> 
+				</div> -->
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+							How do I post a review?
+						</a>
+					</div>
+					<div id="collapseOne" class="accordion-body collapse">
+						<div class="accordion-inner">
+							There are two ways to post a review:<br><br>
+							1) The simplest way is to click "Post" up in the Navigation Bar. This will take you directly to the Post page where you can fill in the required boxes, select ratings and then hit the POST button. 
+							<br><br>
+							2) The second option is you can search for a specific company in the Search box and then navigate to the company home page and post a review. Same as above, make sure that you fill in the required boxes, select ratings and then hit the POST button.
 						</div>
 					</div>
 				</div>
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-							How do I post a review?
-						</a>
-					</div>
-					<div id="collapseTwo" class="accordion-body collapse">
-						<div class="accordion-inner">
-							There are two ways to post a review:<br><br>
-							1) You can click on the Post tab in the Navigation Bar. This will take you directly to the Post page where you can fill in the required boxes, select ratings and then hit the POST button. 
-							<br><br>
-							2) You can click on the Search tab in the Navigation Bar. This will take you to a page with the list of majors that are offered at Wentworth. You can click on the major and it will expand to a list of companies that have been worked at. You can click on the desired company, scroll to the bottom of the company page and then click the POST A REVIEW button. It will take you to a page where you will fill in the required boxes, select 1-5 star rating(s) and then hit the POST button.
-						</div>
-					</div>
-				</div>
-				<div class="accordion-group">
-					<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
 							Who can post? Do I need to be a Wentworth student to post a review?
 						</a>
 					</div>
-					<div id="collapseThree" class="accordion-body collapse">
+					<div id="collapseTwo" class="accordion-body collapse">
 						<div class="accordion-inner">
 							This website is strictly for registered students of Wentworth Institute of Technology. In order to log in, your username will be the username from your email and your password will be set to the default password until changed using the CHANGE PASSWORD option in the MY PROFILE page.<br><br>
 							Example: <br>
@@ -65,11 +65,11 @@
 				</div>
 				<div class="accordion-group">
 					<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
 							How do I change my password? What if I forgot my password?
 						</a>
 					</div>
-					<div id="collapseFive" class="accordion-body collapse">
+					<div id="collapseThree" class="accordion-body collapse">
 						<div class="accordion-inner">
 							To change your password, you click on the My Profile tab on the Navigation Bar. Then you enter your current password, then your new password and then you confirm the new password. If you forgot your password, on the Login page, there is a link to a change your password page. Once on the page, you enter your Wentworth email, and a randomly generated password is then emailed to you.
 						</div>
@@ -77,27 +77,27 @@
 				</div>
 				<div class="accordion-group">
 					<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
 							How do I search for a company?
 						</a>
 					</div>
-					<div id="collapseSix" class="accordion-body collapse">
+					<div id="collapseFour" class="accordion-body collapse">
 						<div class="accordion-inner">
-							To search for a company you first need to click on the Search tab on the Navigation Bar which will bring you to the Search page. Once on the search page, there are two options: <br><br>
-							1) You can either type in the search box a company name and it will pull the closest match to your search. <br><br>
-							2) You can search through the majors by clicking on the major to expand the list of companies and select the one you are looking for.
+							You can search for a company in a few different ways.  <br><br>
+							1) You can either type in the search box a company name and it will pull a list of companies that match your search. <br><br>
+							2) You can simply click on the search icon in the search box and then navigate through the collapsible list of majors till you find the company you are looking for or one that interests you.
 						</div>
 					</div>
 				</div>
 				<div class="accordion-group">
 					<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
 							What if I can't find my company in the list of companies?
 						</a>
 					</div>
-					<div id="collapseSeven" class="accordion-body collapse">
+					<div id="collapseFive" class="accordion-body collapse">
 						<div class="accordion-inner">
-							If you are searching for your company to post a review but do not see it, you will need to add it. To do this, click on the Post Tab to go directly to the Post page. Then in the Company drop down box, scroll to the bottom and select OTHER. A new box will appear on the page below for you to manually enter the company name. Just make sure that you spell the company's name right! Then continue on and finish the post form and post the review. Then if you go back to the Search page, the company that you just added should now be listed.
+							If you are searching for your company to post a review but do not see it, you will need to add it. To do this, click on Post in the navigation bar to go directly to the Post page. Then check the box that says "Company not listed above?". You will then see a new box appear for you to enter your company name. At this point you can then continue with the post page. After you post, go back and search for your company and you will now see it in the list of companies.
 						</div>
 					</div>
 				</div>
