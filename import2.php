@@ -66,7 +66,7 @@
 <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1"> 
   <h3>Choose your CSV file to be imported: </h3><br /> 
   <input name="csv" type="file" id="csv" /> 
-  <input type="submit" name="Submit" value="Submit" /> 
+  <input type="submit" class="btn btn-success" name="Submit" value="Submit" /> 
 </form> 
 
 </body> 

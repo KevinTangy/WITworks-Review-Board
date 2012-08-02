@@ -172,8 +172,8 @@
 
 
 			<div class="row">			
-							<div class="span9">
-								<div class="span9 offset3">
+							<div class="span12">
+								<!--<div class="span9 offset3">-->
 								
 								<img class="splitter" src="/img/grey_out.png">	
 									
@@ -189,14 +189,14 @@
 											echo '<table class="table table-striped table-condensed"><tr><th>Date</th><th>Time</th><th>Student Name</th><th>Email Address</th><th>Major</th><th>Company Name</th><th>Coop Review</th><th>Rating</th></tr>';
 											while($row = mysql_fetch_array($result)){
 											   //Display the results in different cells
-											   echo "<tr><td>" . $row[0] . "</td><td>" . $row[1] . "</td><td>" . $row[3] . ' ' . $row[2] . "</td><td>" . $row[4] . "</td><td>" . $row[5] . "</td><td>" . $row[6] . "</td><td>" . $row[7] . "</td><td>" . $row[8] . "</td></tr>";
+											   echo "<tr><td>" . $row[0] . "</td><td>" . $row[1] . "</td><td>" . $row[3] . ' ' . $row[2] . "</td><td><a href=\"mailto:$row[4]\">" . $row[4] . "</td><td>" . $row[5] . "</td><td>" . $row[6] . "</td><td>" . $row[7] . "</td><td>" . $row[8] . "</td></tr>";
 											}
 											//Table closing tag
 											echo "</table>";
 										?>
 									
 									
-								</div><!--/span9offset3-->
+								<!--</div>/span9offset3-->
 							</div><!--/span9-->
 			</div><!--/row-->	
 			

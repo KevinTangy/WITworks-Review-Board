@@ -65,18 +65,6 @@
 				</div>
 				<div class="accordion-group">
 					<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-							How do you calculate the top 5 companies?
-						</a>
-					</div>
-					<div id="collapseFour" class="accordion-body collapse">
-						<div class="accordion-inner">
-							The way it calculates the top company is actually done with simple math. To find out who has the highest rating is determined by adding up all the stars and then diving by the number of reviews. Thus the 5 companies with the highest number of starts are the top 5.
-						</div>
-					</div>
-				</div>
-				<div class="accordion-group">
-					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
 							How do I change my password? What if I forgot my password?
 						</a>
@@ -117,11 +105,10 @@
 			
 			<!--This enables the user to contact the admins for additional questions-->
 			<?php
-				$sysmail = "tangk2@wit.edu";
-				$from = $_SESSION[ 'username' ] . '@wit.edu';
-
 				if ( $_SERVER[ "REQUEST_METHOD" ] == "POST" )
 				{
+					$sysmail = "tangk2@wit.edu";
+					$from = $_SESSION[ 'username' ] . '@wit.edu';
 					if( mail( $sysmail, stripslashes( trim( $_POST['subject'] ) ), stripslashes( trim( $_POST[ 'message' ] ) ), 'From: ' . $from . PHP_EOL ) )
 					{
 						$message = '<div class="row"><div class="span5" style="text-align:center"><div class="alert alert-success"><a class="close" data-dismiss="alert" href="#">&times;</a>Thanks for contacting us! Someone will get back to you shortly.</div></div></div>';
@@ -150,7 +137,7 @@
 								<textarea class="input-xxlarge" name="message" rows="7" placeholder="Type your comment, question, or message here!"></textarea>
 							</div>
 						</div>
-						<button class="btn btn-success" type="submit">Send message</button>
+						<button class="btn btn-success" type="submit" <?php if ( $_SESSION[ 'username' ] == "demo" ) echo 'disabled'; ?>>Send message</button>
 						<input type="button" class="btn btn-info" onclick="this.form.reset(); $( 'span' ).remove( '.help-inline' ); $( '.control-group' ).removeClass( 'success' ).removeClass( 'error' );" id="resetForm" value="Reset form">
 					</fieldset>
 				</form>

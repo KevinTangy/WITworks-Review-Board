@@ -42,7 +42,7 @@
 		$time = date( 'g:i:s A', $phptime );
 		
 		echo "<b>Company Name: </b>" . $row[ 0 ] . "<br><br>" . $star_rating . "<br><b>Coop Review: </b><br>" . $row[ 2 ] . "<br><br> - Class of  " . $row[ 6 ] . " " . $row[ 5 ] . "<br><font size=\"2\">Posted at " . $time . " on " . $date . "</font><br><br>";
-		echo '<a class="btn" href="viewCompany.php?company=' . urlencode( $row[ 0 ] ) . '">Read more »</a>';
+		echo '<a class="btn btn-info" href="viewCompany.php?company=' . urlencode( $row[ 0 ] ) . '">Read more »</a>';
 		echo '</div>';
 		
 		$counter++;

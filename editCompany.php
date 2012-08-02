@@ -37,7 +37,7 @@
 			
 					<div class="span9">
 							
-							<div class="page-header"><h3>Edit Company Form</h3></div>
+							<div class="page-header"><h2>Edit Company Form</h2></div>
 							* Be careful with this form! Select the company you want to edit and change ONLY the fields you want to update. 
 							<br><br>
 
@@ -133,7 +133,7 @@
 									<b>Company Description:</b><br>
 									<textarea class="defaultText" name="company_description" type="text" id="review" placeholder="Company Description"></textarea>
 									<BR>
-									<input type="submit" value="Submit">
+									<input type="submit" class="btn btn-success" value="Submit">
 							</FORM>
 						
 						

@@ -71,7 +71,7 @@
 					<div class="span9">
 						
 								
-								<div class="page-header"><h3>Flagged Reviews</h3></div>
+								<div class="page-header"><h2>Flagged Reviews</h2></div>
 
 								<?php
 									// database connection settings
@@ -161,8 +161,8 @@
 											// approve/delete controls
 											echo
 											'<form name="aodbuttons" method ="post">
-												<input type="submit" name="aod" value="Approve Review ID ' . $row[ 10 ] . '">
-												<input type="submit" name="aod" value="Delete Review ID ' . $row[ 10 ] . '">
+												<input type="submit" class="btn btn-success" name="aod" value="Approve Review ID ' . $row[ 10 ] . '">
+												<input type="submit" class="btn btn-danger" name="aod" value="Delete Review ID ' . $row[ 10 ] . '">
 											</form>';
 									
 											echo '</div><hr>';

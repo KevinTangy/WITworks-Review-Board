@@ -87,7 +87,7 @@
 					<div class="hero-unit">
 						<form class="form-vertical" method="POST" name="changepw-form" id="changepw-form">
 							<fieldset>
-							<div class="page-header"><h2>Change your password below</h2></div>
+							<h2>Change your password below</h2><hr>
 							<?php echo $foo; ?>
 								<div class="control-group">
 									<div class="controls">
@@ -106,7 +106,7 @@
 									</div>
 								</div>
 							<br>
-							<button type="submit" class="btn btn-success" data-loading-text="Hold up...">Submit</button>
+							<button type="submit" class="btn btn-success" data-loading-text="Hold up..." <?php if ( $_SESSION[ 'username' ] == "demo" ) echo 'disabled'; ?>>Submit</button>
 							<input type="button" class="btn btn-info" onclick="this.form.reset(); $( 'span' ).remove( '.help-block' ); $( '.control-group' ).removeClass( 'success' ).removeClass( 'error' );" value="Reset fields">
 						</form>
 					</div>

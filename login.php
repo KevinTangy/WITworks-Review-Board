@@ -47,7 +47,7 @@
 									<input type="password" name="password" placeholder="Password">
 								</div>
 							</div>
-							<button type="submit" class="btn btn-success" data-loading-text="Logging in...">Sign in!</button>
+							<button type="submit" class="btn btn-success" data-loading-text="Logging in...">Sign In</button>
 							<input type="button" class="btn btn-info" onclick="this.form.reset(); $( 'span' ).remove( '.help-block' ); $( '.control-group' ).removeClass( 'success' ).removeClass( 'error' );" value="Reset fields">
 							<p class="help-block"><a href="iforgot.php">forgot your password?</a></p>
 						</fieldset>

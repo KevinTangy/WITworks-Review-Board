@@ -286,7 +286,7 @@
 							<br>
 
 							<div class="form-actions">
-		            			<button type="submit" class="btn btn-primary" data-loading-text="Posting...">Post!</button>
+		            			<button type="submit" class="btn btn-primary" data-loading-text="Posting..." <?php if ( $_SESSION[ 'username' ] == "demo" ) echo 'disabled'; ?>>Post!</button>
 		            			<input type="button" class="btn btn-info" onclick="this.form.reset(); $( '.stars' ).raty( 'cancel' ); $( '#charCurrent1' ).html( parseInt( 0 ) ); $( '#charCurrent2' ).html( parseInt( 0 ) ); $( 'label' ).remove( '.success' ).remove( '.error' ); $( 'label' ).closest( '.control-group' ).removeClass( 'success' ).removeClass( 'error' );" id="resetForm" value="Reset form">
 							</div>
 						</fieldset>

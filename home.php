@@ -48,7 +48,6 @@
 									<p>Kaspersky Lab is one of the fastest growing IT security companies worldwide and is
 									one of the top CO-OP employers at Wentworth.</p>
 								</div>
-								
 							</div>
 							<div class="item">
 								<a href="http://wit.edu/career-services/prospective/"><img src="img/02.jpg" alt=""></a>
@@ -56,12 +55,14 @@
 									<h4>Wentworth Institute of Technology</h4>
 									<p>Click to visit Wentworth's CO-OP site.</p>
 								</div>
-								
 							</div>
 						</div>
 						<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 						<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 					</div>
+					<script type="text/javascript">
+						$('.carousel').carousel( 'cycle' );
+					</script>
 				</div>
 				
 				<div class="span4">
@@ -90,8 +91,8 @@
 					<center><img src="img/wrb.png" alt=""></center>
 					<h2>WRB</h2>
 					<p class="sub-heading">We're here to help you.</p>
-					<p>WITworks Review Board is a web application which is designed by students just for you! This application is a completely centralized location for all your co-op needs. It allows you to not only post reviews on your own experiences but will also give you a sense of what jobs are out there that you can potentially apply for.</p>
-					<p><a class="btn" href="about.php">Learn more &raquo;</a></p>
+					<p>WITworks Review Board is a web application which is designed by students just for you!  This application is a completely centralized location for all your co-op needs.  It allows you to not only post reviews on your own experiences, but will also give you a sense of what jobs are out there that you can potentially apply for.</p>
+					<p><a class="btn btn-info" href="about.php">Learn more &raquo;</a></p>
 				</div>
 				<div class="span4">
 					<center><img src="img/bubbles.png" alt=""></center>

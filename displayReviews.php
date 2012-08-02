@@ -113,10 +113,12 @@
 						<button href="#" class="vote btn btn-mini btn-danger" id="' . $row[ 12 ] . '" name="dislike" rel="tooltip" title="I dislike this"><i class="icon-thumbs-down icon-white"></i> <b>' . $d . '</b></button>
 					</div>
 					<div style="float:right;">
-						<button href="#" class="btn btn-mini btn-info" id="contact" name="contact" rel="tooltip" title="Contact reviewer"><i class="icon-envelope icon-white"></i></button>
+						<button data-toggle="modal" href="#cModal" class="btn btn-mini btn-info" id="contact" name="contact" rel="tooltip" title="Contact reviewer"><i class="icon-envelope icon-white"></i></button>
 						<button href="#" class="vote btn btn-mini" id="' . $row[ 12 ] . '" name="flag" rel="tooltip" title="Flag review as inappropriate"><i class="icon-flag"></i></button>
 					</div>
 				</div>';
+
+			include( "contactReviewer.php" );
 				
 			echo
 				'<div class="modal hide fade" id="likeModal">

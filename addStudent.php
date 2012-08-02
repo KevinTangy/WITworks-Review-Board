@@ -38,7 +38,7 @@
 					<div class="span9">
 						
 							
-							<div class="page-header"><h3>Student Entry Form</h3></div>
+							<div class="page-header"><h2>Student Entry Form</h2></div>
 							<br>
 								<!-- Entry Form for Student -->
 								<FORM action="addStudentDB.php" method="post" NAME="StudentEntry" id="StudentEntry">
@@ -96,7 +96,7 @@
 									?> 
 									<BR><BR> 
 									<!-- Submit Button for new Student form -->	
-									<INPUT TYPE="submit" VALUE="Submit"/><input type="button" value="Reset Form" onclick="this.form.reset();" id="resetForm"/>
+									<INPUT TYPE="submit" class="btn btn-success" VALUE="Submit"/>   <input type="button" class="btn btn-info" value="Reset Form" onclick="this.form.reset();" id="resetForm"/>
 								 </FORM> 
 								<?php include( "import2.php" ); ?>
 						

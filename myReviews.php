@@ -42,7 +42,7 @@
 							if ( mysql_num_rows( $result ) != 0 )
 							{				
 								$counter = 1;
-								echo "<h3> My Reviews </h3>";
+								echo "<h2> My Reviews </h2>";
 								while( $row = mysql_fetch_array( $result ) )
 								{
 									$star_rating = 
@@ -68,7 +68,7 @@
 									$phptime = strtotime( $row[ 5 ] ) + 10800;
 									$time = date( 'g:i:s A', $phptime );
 			
-									echo "<br><br><b>Company/Employer:</b><br>" . $row[ 9 ] . "<br><br><b>Rating:</b> " . $star_rating . "<br><b>Co-op Title:<br></b>" . $row[ 0 ] . "<br><br><b> Co-op Course Number: </b><br>" . $row[ 8 ] . "<br><br><b> Job Description: </b><br>" . $row[ 1 ] . "<br><br><b>Comments: </b><br>" . $row[ 2 ] . "<br><br><br> - Class of  " . $row[ 7 ] . " " . $row[ 6 ] . "<br><font size=\"2\">Posted at " . $time . " on " . $date . "</font><br><br><br><br>";
+									echo "<hr><br><b>Company/Employer:</b><br>" . $row[ 9 ] . "<br><br><b>Rating:</b> " . $star_rating . "<br><b>Co-op Title:<br></b>" . $row[ 0 ] . "<br><br><b> Co-op Course Number: </b><br>" . $row[ 8 ] . "<br><br><b> Job Description: </b><br>" . $row[ 1 ] . "<br><br><b>Comments: </b><br>" . $row[ 2 ] . "<br><br><br> - Class of  " . $row[ 7 ] . " " . $row[ 6 ] . "<br><font size=\"2\">Posted at " . $time . " on " . $date . "</font><br><br>";
 									echo '</div>';
 			
 									$counter++;

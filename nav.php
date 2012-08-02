@@ -46,7 +46,7 @@
 						<li>
 							<form class="navbar-search pull-left" action="search.php" method="get">
 								<input class="search-query span3" placeholder="Search for a company" type="text" name="company">
-								<div class="icon-search" onclick="location.href='search.php';" style="cursor: pointer"></div>
+								<div class="icon-search" onclick="location.href='search.php';" style="cursor: pointer" title="Click me for advanced search options!"></div>
 							</form>
 						</li>
 					</ul>

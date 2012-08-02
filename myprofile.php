@@ -30,6 +30,7 @@
 			
 				<div class="span9">
 					<div class="hero-unit">
+					<center>
 						<?php
 							include( "config.php" );
 				
@@ -39,9 +40,12 @@
 							$row = mysql_fetch_array( $result );
 				
 							echo
-								'<div class="page-header">
-									<h2 style="text-align: center;">' . $row[ 2 ] . ' ' . $row[ 1 ] . '</h2>
+								'<div class="make-red">
+									<h2>' . $row[ 2 ] . ' ' . $row[ 1 ] . '</h2>
 								</div>
+								
+								<hr>
+								
 								<table style="empty-cells: show;">
 									<tbody>
 										<tr>
@@ -70,6 +74,8 @@
 									</tbody>
 								</table>';
 						?>
+						
+					</center>
 					</div>
 				</div>
 	
