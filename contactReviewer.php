@@ -1,15 +1,15 @@
 <?php
 	if ( $_SERVER[ "REQUEST_METHOD" ] == "POST" )
 	{
-		$query = "select EmailAddress from Student_Reviews join Student where Student_Reviews.StudentID = Student.StudentID and ReviewID = '" . $row[ 12 ] . "'";
-		$rowA = mysql_query( $query ) or die( mysql_error() );
-		$row = mysql_fetch_array( $rowA );
-		$to = $row[ 0 ];
+		$query1 = "select EmailAddress from Student_Reviews join Student where Student_Reviews.StudentID = Student.StudentID and ReviewID = '" . $row[ 12 ] . "'";
+		$rowA1 = mysql_query( $query1 ) or die( mysql_error() );
+		$row1 = mysql_fetch_array( $rowA1 );
+		$to = $row1[ 0 ];
 
-		$query = "select EmailAddress from Student join Login where Student.StudentID = Login.StudentID and UserName = '" . $_SESSION[ 'username' ] . "'";
-		$rowA = mysql_query( $query ) or die( mysql_error() );
-		$row = mysql_fetch_array( $rowA );
-		$from = $row[ 0 ];
+		$query2 = "select EmailAddress from Student join Login where Student.StudentID = Login.StudentID and UserName = '" . $_SESSION[ 'username' ] . "'";
+		$rowA2 = mysql_query( $query2 ) or die( mysql_error() );
+		$row2 = mysql_fetch_array( $rowA2 );
+		$from = $row2[ 0 ];
 
 		$subject = "[WITworks Review Board] " . $from . " is contacting you about " . $companyName;
 		$msg = stripslashes( trim( $_POST[ 'message' ] ) );
