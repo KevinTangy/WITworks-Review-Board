@@ -1,4 +1,3 @@
-
 <?php 
 	// config file with server credentials and database connection, used in all components requiring db interactivity
 	
@@ -8,14 +7,14 @@
 		case 'www.ktang.profrusso.com':
 			$hostname = 'mysql.ktang.profrusso.com';
 			$dbname = 'ktangdb';
-			$username = 'ktang';
-			$password = 'wittang';
+			$username = '';
+			$password = '';
 			break; 
 		case 'witworksreviewboard.com': 
 			$hostname = 'localhost';
 			$dbname = 'ktangdb';
-			$username = 'root';
-			$password = 'wittang'; 
+			$username = '';
+			$password = ''; 
 			break; 
 	}
 	
