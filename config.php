@@ -10,7 +10,8 @@
 			$username = '';
 			$password = '';
 			break; 
-		case 'witworksreviewboard.com': 
+		case 'witworksreviewboard.com':
+		default:
 			$hostname = 'localhost';
 			$dbname = 'ktangdb';
 			$username = '';
