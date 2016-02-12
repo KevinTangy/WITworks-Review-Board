@@ -36,7 +36,7 @@
 					<form id="login-form" method="POST" action="">
 						<fieldset>
 						<div class="page-header"><h2>User Login</h2></div>
-						<?php echo $error; ?>
+						<?php if ( isset( $error ) ) echo $error; ?>
 							<div class="control-group">
 								<div class="controls">
 									<input type="text" name="username" placeholder="Username">
